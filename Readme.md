@@ -1,7 +1,7 @@
-# Личный проект «Пинк» [![Build status][travis-image]][travis-url] [![Dependency status][dependency-image]][dependency-url]
+﻿# Личный проект «Пинк» [![Build status][travis-image]][travis-url] [![Dependency status][dependency-image]][dependency-url]
 
 * Студент: [Александр Егоричев](https://up.htmlacademy.ru/adaptive/7/user/158293).
-* Наставник: `Неизвестно`.
+* Наставник: [Евгений Старшинов](https://htmlacademy.ru/profile/id100874).
 
 ---
 
