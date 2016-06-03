@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<title>Pink</title>
+</head>
+<body>
+	<header class="page-header">
+		<div class="menu">
+			<div class="container-center">
+				<div class="logo">
+					<a class="logo__link" href="#">Pink</a>
+				</div>
+				<nav class="main-nav  main-nav--hidden">
+					<a href="#" class="main-nav__toggle"></a>
+					<ul class="main-nav__list">
+						<li class="main-nav__item"><a href="#">Главная</a></li>
+						<li class="main-nav__item"><a href="#">Фотографии</a></li>
+						<li class="main-nav__item"><a href="#">Конкурс</a></li>
+						<li class="main-nav__item"><a href="#">Hmtl Academy</a></li>
+					</ul>
+				</nav>
+			</div>
+		</div>
+		<h1 class="page-header__title">Конкурс на самое безбашенное путешествие с Пинк</h1>
+	</header>
+	<main>
+		<form class="page-form" action="#" method="post">
+			<div class="container-center">
+				<p class="page-form__description">Поделитесь своей историей и получите шанс выиграть ценный приз - 1000 миль на вашу бонусную карту!</p>
+				<div class="page-form__item">
+					<label class="page-form__text-label" for="last-name">Фамилия:</label>
+					<input type="text" id="last-name" name="last-name" placeholder="Укажите фамилию">
+
+					<label class="page-form__text-label" for="first-name">Имя:</label>
+					<input type="text" id="first-name"	name="first-name" placeholder="Введите ваше имя">
+
+					<label class="page-form__text-label" for="middle-name">Отчество:</label>
+					<input type="text" id="middle-name" name="middle-name" placeholder="Ну и отчество тоже">
+				</div>
+			</div>
+			<div class="page-form__item"">
+				<div class="container-center">
+					<h3 class="page-form__fieldset-title">Ваши безбашенные достижения в путешествии</h3>
+					<input type="checkbox" name="selfie-shark" id="selfie-shark" checked>
+					<label for="selfie-shark" class="page-form__achive-label">Сделал селфи с акулой</label>
+					
+					<input type="checkbox" name="sunburn" id="sunburn" checked>
+					<label for="sunburn" class="page-form__achive-label">Обгорел на пляже</label>
+					
+					<input type="checkbox" name="saw-chuck" id="saw-chuck">
+					<label for="saw-chuck" class="page-form__achive-label">Видел Чака Норриса</label>
+					
+					<input type="checkbox" name="souvenirs" id="souvenirs">
+					<label for="souvenirs" class="page-form__achive-label">Накупил сувениров</label>
+					
+					<input type="checkbox" name="tower" id="tower" checked>
+					<label for="" class="page-form__achive-label">Обгорел на пляже</label>
+					
+					<input type="checkbox" name="destroy-hotel" id="destroy-hotel">
+					<label for="destroy-hotel" class="page-form__achive-label">Разгромил отель</label>
+				</div>
+			</div>
+			<div class="page-form__item">
+				<div class="container-center">
+					<label for="tel" class="page-form__text-label">Номерок телефончика</label>
+					<input type="tel" name="tel" id="tel" placeholder="Номер, пожалуйста" pattern="(\+?\d[- .]*){7,13}" required>
+
+					<label for="email" class="page-form__text-label">Адресок почты</label>
+					<input type="email" name="email" id="email" placeholder="E-mail, пожалуйста" pattern="[^@]+@[^@]+\.[a-zA-Z]{2,6}" required>
+				</div>
+			</div>
+			<div class="page-form__item">
+				<div class="container-center">
+					<h3 class="page-form__fieldset-title">С каким приложением путешествовали?</h3>
+					<input type="radio" name="ios" id="ios" checked>
+					<label for="ios" class="page-form__apps-label">Pink для iOS</label>
+
+					<input type="radio" name="android" id="android">
+					<label for="android" class="page-form__apps-label">Pink на Android</label>
+
+					<input type="radio" name="windows" id="windows">
+					<label for="windows" class="page-form__apps-label">Windows Phone</label>
+				</div>
+			</div>
+			<div class="page-form__item">
+				<div class="container-center">
+					<label for="message" class="page-form__text-label">Опишите свои эмоции</label>
+					<textarea name="message" id="message" cols="30" rows="10" placeholder="Можно прям в красках, не стесняясь в выражениях"></textarea>
+				</div>
+			</div>
+			<div class="page-form__item">
+				<div class="container-center">
+					<input class="page-form__submit-btn" type="submit" id="submit-btn" value="Отправить форму">
+					<p class="page-form__footnote"><span>*</span>__обязательные поля</p>
+				</div>
+			</div>
+		</form>
+	</main>
+	<footer class="page-footer">
+		<div class="container-center">
+			<div class="logo">
+				<a class="logo__link" href="index.html">Pink</a>
+			</div>
+			<div class="social-links">
+				<a class="social-link social-link--tw" href="#">Twitter</a>
+				<a class="social-link social-link--fb" href="#">Facebook</a>
+				<a class="social-link social-link--yt" href="#">Youtube</a>
+			</div>
+			<p class="page-footer__copyright">
+				Разработано:
+				<a class="copy-link" href="https://htmlacademy.ru/">HTML Academy</a>
+			</p>
+		</div>
+	</footer>
+</body>
+</html>
