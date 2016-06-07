@@ -1,0 +1,38 @@
+.page-footer {
+	background: white;
+}
+.page-footer__map {
+	background: gray;
+	width: 100%;
+	height: 380px;
+}
+
+
+.page-footer__links-wrapper {
+	display: none;
+	@include container;
+}
+
+@media (min-width: 700px) {
+	.page-footer__links-wrapper {
+		display: flex;
+		justify-content: space-between;
+		min-height: 130px;
+		font: 400 14px/18px OpenSans, Arial, sans-serif;
+	}
+	
+	.logo--footer a {
+		display: block;
+		margin-top: 30px;
+		padding: 20px;
+		font-size: 40px;
+		color: #283645;
+	}
+	.page-footer__copyright {
+		width: 150px;
+		padding-top: 50px;
+		& a {
+			color: #d22856;
+		}
+	}
+}

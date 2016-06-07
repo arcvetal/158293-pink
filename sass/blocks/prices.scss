@@ -1,0 +1,25 @@
+.prices {
+	background: #f2f2f2;
+	input[type="radio"] {
+		display: none;
+	}
+}
+.price__wrapper {
+	width: 100%;
+	overflow: hidden;
+}
+.prices__table {
+	margin: 0 auto;
+	border-collapse: collapse;
+	border: 2px solid #e5e5e5;
+	background: #fff;
+}
+.prices__table th {
+	background: #283645;
+	color: #fff;
+}
+.prices__table td {
+	border: 2px solid #e5e5e5;
+	padding: 15px;
+	padding-right: 45px;
+}

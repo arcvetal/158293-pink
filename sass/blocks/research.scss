@@ -1,0 +1,47 @@
+.research {
+	display: none;
+}
+
+@media (min-width: 700px) {
+	.research {
+		display: block;
+		background: #fff;
+		font: 400 14px/24px OpenSans, Arial, sans-serif;
+		
+		&__wrapper {
+			padding-top: 100px;
+			padding-bottom: 120px;
+			padding-left: 310px;
+			padding-right: 20px;
+		}
+		
+		&__title {
+			padding-bottom: 40px;
+			font: 700 30px/36px OpenSans, Arial, sans-serif;
+			color: #000;
+		}
+		
+		&__content {
+			padding-bottom: 40px;
+		}
+		
+		&__link {
+			color: #d22856;
+			text-decoration: underline;
+		}
+	}
+}
+@media (min-width: 1200px) {
+	.research {
+		background: #f2f2f2;
+		
+		&__wrapper {
+			padding-left: 370px;
+			padding-right: 100px;
+		}
+		
+		&__content {
+			font: 400 18px/30px OpenSans, Arial, sans-serif;
+		}
+	}
+}

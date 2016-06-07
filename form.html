@@ -3,9 +3,13 @@
 <head>
 	<meta charset="UTF-8">
 	<title>Pink</title>
+	<meta name="viewport" content="width=device-width,initial-scale=1">
+  	<meta name="format-detection" content="telephone=no">
+	<link href="http://fonts.googleapis.com/css?family=Open+Sans:400,700,300&amp;subset=latin,cyrillic-ext" rel="stylesheet" type="text/css">
+	<link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-	<header class="page-header">
+	<header class="page-header page-header--form">
 		<div class="menu">
 			<div class="container-center">
 				<div class="logo">
@@ -27,8 +31,8 @@
 	<main>
 		<form class="page-form" action="#" method="post">
 			<div class="container-center">
-				<p class="page-form__description">Поделитесь своей историей и получите шанс выиграть ценный приз - 1000 миль на вашу бонусную карту!</p>
-				<div class="page-form__item">
+				<p class="page-form__description">Поделитесь своей историей и получите шанс выиграть ценный приз - 1000 миль на вашу бонусную карту! <span class="page-form__desc-act">Пожалуйста, заполните форму ниже:</span></p>
+				<div class="page-form__item page-form__item--user-name">
 					<label class="page-form__text-label" for="last-name">Фамилия:</label>
 					<input type="text" id="last-name" name="last-name" placeholder="Укажите фамилию">
 
@@ -39,8 +43,8 @@
 					<input type="text" id="middle-name" name="middle-name" placeholder="Ну и отчество тоже">
 				</div>
 			</div>
-			<div class="page-form__item"">
-				<div class="container-center">
+			<div class="page-form__item page-form__item--achive">
+				<div class="container-center container-center--achive">
 					<h3 class="page-form__fieldset-title">Ваши безбашенные достижения в путешествии</h3>
 					<input type="checkbox" name="selfie-shark" id="selfie-shark" checked>
 					<label for="selfie-shark" class="page-form__achive-label">Сделал селфи с акулой</label>
@@ -61,8 +65,8 @@
 					<label for="destroy-hotel" class="page-form__achive-label">Разгромил отель</label>
 				</div>
 			</div>
-			<div class="page-form__item">
-				<div class="container-center">
+			<div class="page-form__item page-form__item--contacts">
+				<div class="container-center container-center--contacts">
 					<label for="tel" class="page-form__text-label">Номерок телефончика</label>
 					<input type="tel" name="tel" id="tel" placeholder="Номер, пожалуйста" pattern="(\+?\d[- .]*){7,13}" required>
 
@@ -70,21 +74,21 @@
 					<input type="email" name="email" id="email" placeholder="E-mail, пожалуйста" pattern="[^@]+@[^@]+\.[a-zA-Z]{2,6}" required>
 				</div>
 			</div>
-			<div class="page-form__item">
-				<div class="container-center">
+			<div class="page-form__item page-form__item--apps">
+				<div class="container-center container-center--apps">
 					<h3 class="page-form__fieldset-title">С каким приложением путешествовали?</h3>
-					<input type="radio" name="ios" id="ios" checked>
+					<input type="radio" name="app" id="ios" checked>
 					<label for="ios" class="page-form__apps-label">Pink для iOS</label>
 
-					<input type="radio" name="android" id="android">
+					<input type="radio" name="app" id="android">
 					<label for="android" class="page-form__apps-label">Pink на Android</label>
 
-					<input type="radio" name="windows" id="windows">
+					<input type="radio" name="app" id="windows">
 					<label for="windows" class="page-form__apps-label">Windows Phone</label>
 				</div>
 			</div>
-			<div class="page-form__item">
-				<div class="container-center">
+			<div class="page-form__item page-form__item--message ">
+				<div class="container-center container-center--message">
 					<label for="message" class="page-form__text-label">Опишите свои эмоции</label>
 					<textarea name="message" id="message" cols="30" rows="10" placeholder="Можно прям в красках, не стесняясь в выражениях"></textarea>
 				</div>
@@ -98,7 +102,7 @@
 		</form>
 	</main>
 	<footer class="page-footer">
-		<div class="container-center">
+		<div class="page-footer__links-wrapper">
 			<div class="logo">
 				<a class="logo__link" href="index.html">Pink</a>
 			</div>
