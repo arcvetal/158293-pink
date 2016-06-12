@@ -1,31 +1,60 @@
+@media (max-width: 700px) {
+	.page-form__item--achive,
+	.page-form__item--apps {
+		background: #f2f2f2;
+	}
+	 
+	.page-form__item--contacts legend,
+	.page-form__desc-act {
+		font-size: 0;
+		padding: 0;
+	}
+	 
+	.page-form__input-tablet,
+	.page-form__text-label--tablet {
+		display: none;
+	}
+}
+
 .page-form {
 	background: #fff;
+	font-family: "OpenSans", "Arial", sans-serif;
+	
 	input[type="text"],
 	input[type="email"],
-	input[type="tel"] {
+	input[type="tel"],
+	textarea {
+    	margin-bottom: 16px;
+    	padding: 17px 20px 13px;
+    	width: 100%;
+    	font-size: 18px;
+		line-height: 30px;
+		color: #283645;
+    	border: 2px solid #e5e5e5;
+		box-sizing: border-box;
+    	border-radius: 3px;
+    	outline: 0;
 		
-    margin-bottom: 16px;
-    padding: 17px 20px 13px;
-    width: 100%;
-    font-size: 18px;
-	line-height: 30px;
-	color: #283645;
-    border: 2px solid #e5e5e5;
-	box-sizing: border-box;
-    border-radius: 3px;
-    outline: 0;
+		&::placeholder {
+			color: #283645;
+		}
+		
+		&:hover {
+			border-color: #283645;
+		}
+		
+		&:focus {
+			border-color: #d22856;
+		}
 	}
 }
 
 .page-form__description {
-	padding: 0 20px;
+	font-size: 14px;
+	line-height: 30px;
 	padding-top: 55px;
 	padding-bottom: 50px;
 	text-align: center;
-}
-	
-.page-form__desc-act {
-	display: none;
 }
 	
 .page-form__item--user-name {
@@ -34,7 +63,7 @@
 }
 	
 .page-form__text-label {
-	padding-left: 20px;
+	margin-left: 20px;
 	padding-bottom: 10px;
 	font-size: 14px;
 	line-height: 30px;
@@ -43,13 +72,12 @@
 	color: #d22856;
 }
 	
-
-.page-form__item--achive {
-	background: #f2f2f2;
-}
-.container-center--achive {
+.page-form__fieldset {
 	display: flex;
 	flex-wrap: wrap;
+	padding: 0;
+	margin: 0;
+	border: none;
 }
 .page-form__fieldset-title {
 	padding: 40px 20px;
@@ -61,16 +89,23 @@
 	color: #d22856;
 }
 input[type="checkbox"],
-input[type="radio"]{
+input[type="radio"] {
 	display: none;
 }
- .page-form__achive-label {
+.page-form__achive-label {
+	display: block;
 	position: relative;
-	 flex-grow: 1;
-	padding-bottom: 65px;
+	margin-bottom: 65px;
 	padding-left: 70px;
 	font-size: 18px;
 	line-height: 30px;
+	
+	&:hover:before {
+		border-color: #283645;
+	}
+	&:active:before {
+		border-color: #d22856;
+	}
 }
 
 .page-form__achive-label:before {
@@ -83,40 +118,30 @@ input[type="radio"]{
 	border: 2px solid #e5e5e5;
 	background: #fff;
 	border-radius: 2px;
+	
 }
 
 input[type="checkbox"]:checked + .page-form__achive-label:after {
 	position: absolute;
-	content: 'x';
-	top: 5px;
-	left: 10px;
-	width: 10px;
-	height: 10px;
-	font-size: 34px;
-}
-.container-center--contacts {
-	display: flex;
-	flex-wrap: wrap;
-	padding-bottom: 60px;
-}
-.page-form__item--contacts label {
-	padding-top: 30px;
-}
-.page-form__item--contacts label:last-of-type {
-	padding-top: 0px;
+	content: "";
+    top: 12px;
+    left: 11px;
+    width: 20px;
+    height: 7px;
+    border-left: 3px solid #d12755;
+    border-bottom: 3px solid #d12755;
+    transform: rotate(-45deg);
 }
 
-.page-form__item--apps {
-	background: #f2f2f2;
-}
-.container-center--apps {
-	display: flex;
-	flex-direction: column;
+.page-form__item--apps .page-form__fieldset {
+	padding-bottom: 10px;
 }
 .page-form__item--apps label {
 	position: relative;
 	padding-left: 70px;
-	padding-bottom: 60px;
+	margin-bottom: 45px;
+	font-size: 18px;
+	line-height: 30px;
 	
 	&:before {
 		content: "";
@@ -129,7 +154,16 @@ input[type="checkbox"]:checked + .page-form__achive-label:after {
 		border: 2px solid #e5e5e5;
 		border-radius: 50%;
 	}
+	
+	&:hover:before {
+		border-color: #283645;
+	}
+	
+	&:active:before {
+		border-color: #d22856;
+	}
 }
+
 input[type="radio"]:checked + label:after {
 	content: "";
     position: absolute;
@@ -142,22 +176,102 @@ input[type="radio"]:checked + label:after {
     z-index: 100;
 }
 
-.container-center--message {
-	display: flex;
-	flex-direction: column;
+.page-form__item--message textarea {
+	font-size: 18px;
+	line-height: 30px;
+	font-family: "OpenSans", "Arial", sans-serif;
+	min-height: 195px;
 }
 
+.container-center--submit {
+	display: flex;
+	flex-wrap: wrap;
+}
+.page-form__submit-btn {
+	margin-top: 47px;
+	margin-bottom: 22px;
+    padding: 18px 0 15px;
+	max-width: 300px;
+    width: 100%;
+    font-size: 18px;
+	line-height: 30px;
+	font-weight: 700;
+	text-transform: uppercase;
+    color: #fff;
+	letter-spacing: 1px;
+    background-color: #2aab6d;
+    border-radius: 3px;
+	border: none;
+	outline: none;
+	
+	&:hover {
+		background-color: #1c9b5e;
+	}
+	
+	&:active {
+		color: #61b98f;
+	}
+	
+	&:disabled {
+		background-color: #e5e5e5;
+		color: #fff;
+	}
+}
+.page-form__footnote {
+	margin: 0 auto;
+	text-transform: uppercase;
+	
+	& span {
+		color: #d12755;
+	}
+}
+
+
 @media (min-width: 700px) {
-	.page-form__desc-act {
-		display: inline;
+	.page-form--tablet {
+		display: flex;
+		flex-wrap: wrap;
+
+	}
+	.page-form__description {
+		font-size: 18px;
+		padding: 100px 50px;
 	}
 	
 	.page-form__item {
 		flex-direction: row;
 		flex-wrap: wrap;
 	}
+	@media (max-width: 1200px) {
+		.page-form__item {
+			@include container;
+		}
+	}
+	.page-form__item--user-name   {
+		align-items: baseline; 
+	}
+	.page-form__item--user-name .page-form__text-label {
+		margin: 0;
+		margin-bottom: 60px;
+	}
 	
-	.page-form__text-label {
+	.page-form__item--apps {
+		order: 1;
+	}
+	.page-form__item--contacts {
+		order: 2;
+	}
+	.page-form__item--achive {
+		order: 3;
+	}
+	.page-form__item--message {
+		order: 4;
+	}
+	.page-form__item--submit-form {
+		order: 5;
+	}
+	
+	.page-form__item--user-name label {
 		width: 15%;
 		padding: 0;
 		padding-top: 25px;
@@ -170,7 +284,126 @@ input[type="radio"]:checked + label:after {
 		width: 85%;
 		flex-grow: 1;
 	}
+	
+	.page-form__fieldset {
+		padding: 0 58px;
+    	border: 2px solid #e5e5e5;
+    	border-radius: 3px;
+	}
+	.page-form__item--contacts .page-form__fieldset {
+		padding-right: 100px;
+	}
+	.page-form__text-label--tablet{
+		position: relative;
+		padding: 0;
+		padding-top: 0;
+		padding-bottom: 30px;
+		text-indent: -20px;
+		
+		&:after {
+			position: absolute;
+			content: "";
+			top: 0px;
+			right: -40px;
+			width: 62px;
+			height: 64px;
+			background-color: #e5e5e5;
+			border-radius: 0 3px 3px 0;
+			background-image: url("/img/mail.png");
+			background-repeat: no-repeat;
+			background-position: center;
+			background-size: 18px 13px;
+		}
+	}
+	.page-form__item--contacts label[for="tel-tablet"]:after {
+		background-image: url("/img/phone.png");
+		background-repeat: no-repeat;
+		background-position: center;
+		background-size: 20px 20px;
+	}
+	.page-form__text-label--mobile,
+	.page-form__input-mobile {
+		display: none;
+	}
+	.page-form__item--message .page-form__fieldset {
+		padding: 0px 60px;
+		padding-bottom: 45px;
+	}
+	
+	.container-center--submit {
+		justify-content: space-between;
+		align-items: baseline;
+	}
+	.page-form__footnote {
+		width: 32.26%;
+		text-align: right;
+		padding: 0;
+		margin-right: 0;
+	}
+	
 }
 @media (min-width: 1200px) {
-	
+	.page-form {
+		@include container;
+	}
+	.page-form__item--apps .container-center {
+		width: 100%;
+		margin: 0;
+	}
+	.container-center--user-name {
+		flex-basis: 46.27%;
+	}
+	.page-form__item--user-name {
+		padding: 0;
+		margin-top: 15px;
+	}
+	.page-form__item--user-name label {
+		padding-right: 30px;
+	}
+	.page-form__item--user-name label[for="first-name"] {
+		padding-right: 20px;
+	}
+	.page-form__item--user-name input  {
+		flex-basis: 320px;
+	}
+	.page-form__item--apps  {
+		width: 46.27%;
+		margin-left: 70px;
+	}
+	.page-form__item--apps .page-form__fieldset {
+		padding-top: 45px;
+		padding-left: 70px;
+	}
+	.page-form__item--apps legend {
+		padding: 0 20px;
+		margin: 0 -90px;
+	}
+	.page-form__item--contacts .page-form__fieldset {
+		display: block;
+		@iclude clearfix;
+	}
+	.page-form__item--contacts label[for="tel-tablet"] {
+		float: left;
+		width: 315px;
+	}
+	.page-form__item--contacts label[for="email-tablet"] {
+		float: right;
+		width: 315px;
+	}
+	.page-form__item--achive .page-form__fieldset {
+		padding-right: 0;
+	}
+	.page-form__achive-wrapper {
+		column-count: 3;
+		column-width: 200px;
+		column-gap: 55px;
+	}
+	.page-form__achive-label {
+		padding-left: 60px;
+		display: inline-block;
+		vertical-align: top;
+	}
+	label[for="selfie-shark"] {
+		width: 200px;
+	}
 }

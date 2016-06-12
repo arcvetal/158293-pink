@@ -1,38 +1,88 @@
 .page-footer {
-	background: white;
+	font-size: 14px;
+	line-height: 18px;
+	font-weight: 400;
+	font-family: "OpenSans", "Arial", sans-serif;
+	color: #283645;
+	background: #fff;
 }
 .page-footer__map {
+	position: relative;
 	background: gray;
 	width: 100%;
-	height: 380px;
+	height: 200px;
+	background-image: url("/img/bg-map-mobile@1x.png");
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: contain;
+	
+	&:after {
+		position: absolute;
+		content: "";
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+		background-image: url("/img/bg-triangle-white-footer.svg");
+		background-repeat: no-repeat;
+		background-position: center top;
+		background-size: contain;
+		z-index: 10;
+	}
 }
 
-
 .page-footer__links-wrapper {
-	display: none;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
 	@include container;
 }
 
+
+.page-footer__copyright {
+	float: right;
+	margin-bottom: 5px;
+	padding-right: 26px;
+}
+.page-footer__copyright a {
+	position: relative;
+	margin-left: 5px;
+	font-size: 0;
+	color: #d22856;
+	
+	&:after {
+		position: absolute;
+		content: "";
+		top: -17px;
+		left: 0;
+		width: 30px;
+		height: 34px;
+		background-image: url("/img/htmlacademy.svg");
+		background-repeat: no-repeat;
+		background-position: center;
+		background-size: cover;
+	}
+}
+
+.page-footer__links-wrapper--none {
+	display: none;
+	
+}
+
 @media (min-width: 700px) {
+	.page-footer__map {
+		height: 380px;
+	}
 	.page-footer__links-wrapper {
 		display: flex;
 		justify-content: space-between;
-		min-height: 130px;
-		font: 400 14px/18px OpenSans, Arial, sans-serif;
-	}
-	
-	.logo--footer a {
-		display: block;
-		margin-top: 30px;
-		padding: 20px;
-		font-size: 40px;
-		color: #283645;
 	}
 	.page-footer__copyright {
-		width: 150px;
-		padding-top: 50px;
-		& a {
-			color: #d22856;
-		}
+		margin-top: 50px;
+	}
+}
+@media (min-width: 1200px) {
+	.page-footer__map {
+		height: 500px;
 	}
 }

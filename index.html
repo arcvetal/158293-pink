@@ -10,19 +10,19 @@
 </head>
 <body class="page-index">
 	<header class="page-header">
-		<div class="menu">
-			<div class="container-center">
-				<div class="menu__logo-link logo"><a href="#">Pink</a></div>
-				<nav class="main-nav">
-				<a href="#" class="menu__toggle"></a>
-					<ul class="main-nav__list">
-						<li class="main-nav__item"><a href="#">Главная</a></li>
-						<li class="main-nav__item"><a href="#">Фотографии</a></li>
-						<li class="main-nav__item"><a href="#">Конкурс</a></li>
-						<li class="main-nav__item"><a href="#">Hmtl Academy</a></li>
-					</ul>
-				</nav>
-			</div>
+		<div class="page-header__wrapper page-header__wrapper--closed page-header__wrapper--nojs">
+			<nav class="main-nav">
+				<div class="logo logo--header">
+					<a href="#">Pink</a>
+				</div>
+				<a href="#" class=" main-nav__toggle"></a>
+				<ul class="main-nav__list">
+					<li class="main-nav__item main-nav__item--active"><a>Главная</a></li>
+					<li class="main-nav__item"><a href="#">Фотографии</a></li>
+					<li class="main-nav__item"><a href="#">Конкурс</a></li>
+					<li class="main-nav__item"><a href="#">HTML Academy</a></li>
+				</ul>
+			</nav>
 		</div>
 		<div class="intro">
 			<div class="container-center">
@@ -34,14 +34,20 @@
 					<div class="download__wrapper">
 						<a class="download__download-btn" href="#" >Скачать приложение</a>
 						<ul class="download__list">
-							<li class="download__item download__item--apple">
-								<a href="#" title="Скачать для OS X"><img src="http://placehold.it/46x57"></a>
+							<li class="download__item">
+								<a href="#" title="Скачать для OS X">Скачать для OS X
+									<img class="downloads__icon" src="img/logo-apple.svg" width="50" height="57" alt="apple">
+								</a>
 							</li>
-							<li class="download__item download__item--android">
-								<a href="#" title="Скачать для Android"><img src="http://placehold.it/46x57"></a>
+							<li class="download__item">
+								<a href="#" title="Скачать для Android">Скачать для Android
+									<img class="downloads__icon" src="img/logo-android.svg" width="46" height="49" alt="android">
+								</a>
 							</li>
-							<li class="download__item download__item--windows">
-								<a href="#" title="Скачать для Windows"><img src="http://placehold.it/46x57"></a>
+							<li class="download__item">
+								<a href="#" title="Скачать для Windows">Скачать для Windows
+									<img class="downloads__icon" src="img/logo-microsoft.svg" width="46" height="43" alt="windows">
+								</a>
 							</li>
 						</ul>
 						<p class="download__description">Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8</p>
@@ -54,11 +60,11 @@
 			<header class="features__header">
 				<div class="container-center">
 					<h2 class="features__title">Устали от серости мегаполиса?</h2>
-					<h2 class="features__title features__title--second">Нам есть, что вам  предложить!</h2>
+					<h2 class="features__title">Нам есть, что вам  предложить!</h2>
 				</div>
 			</header>
 			<div class="features__wrapper">
-				<div class="container-center phone-tablet">
+				<div class="container-center container-center--phone-tablet">
 					<ul class="features__list">
 						<li class="features__item">
 							<h3 class="features__item-title">Поднимает настроение</h3>
@@ -96,6 +102,8 @@
 					<label class="reviews__toggle" for="review-input-3" ></label>
 				</div>
 				<ul class="reviews__list">
+					<a class="reviews__arrow-left" href="#"></a>
+					<a class="reviews__arrow-right" href="#"></a>
 					<li class="reviews__item">
 						<h3 class="reviews__item-title">Николай Петров</h3>
 						<p class="reviews__item-subtitle">25 лет, водитель трамвая</p>
@@ -202,7 +210,7 @@
 	<footer class="page-footer">
 		<div class="contacts">
 			<div class="container-center flex">
-				<div class="contacts__header-wrapper">
+				<div class="contacts__title-wrapper">
 					<h2 class="contacts__title">Остались вопросы?</h2>
 					<h2 class="contacts__title">Свяжитесь с нами!</h2>
 				</div>
@@ -212,16 +220,17 @@
 				</div>
 				<div class="contacts__wrapper contacts__wrapper--mail">
 					<h3 class="contacts__action">Пишите:</h3>
-					<p class="contacts__info">mail@htmlacademy.ru</p>
+					<p class="contacts__info"><a href="#">mail@htmlacademy.ru</a></p>
 				</div>
-				<div class="contacts__wrapper contacts__wrapper-adress">
+				<div class="contacts__wrapper contacts__wrapper--adress">
 					<h3 class="contacts__action">Приезжайте в гости:</h3>
 					<p class="contacts__info">ул. Большая Конюшенная, 19/8</p>
 				</div>
 			</div>
 		</div>
-		<div class="page-footer__map" id="map"></div>
-		<div class="page-footer__links-wrapper">
+		<div class="page-footer__map" id="map_canvas">
+		</div>
+		<div class="page-footer__links-wrapper page-footer__links-wrapper--none">
 			<div class="logo logo--footer">
 				<a class="logo__link" href="index.html">Pink</a>
 			</div>
@@ -236,5 +245,9 @@
 			</p>
 		</div>
 	</footer>
+	<script src="js/menu-toggle.js"></script>
+	<script src="http://maps.googleapis.com/maps/api/js?sensor=false" type="text/javascript"></script>
+	<script src="js/map.js"></script>
+
 </body>
 </html>

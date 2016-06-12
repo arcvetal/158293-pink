@@ -1,53 +1,58 @@
 .features {
 	background: #fff;
+}
+.features__title { 
+	text-align: center;
+	padding: 0 20px;
+	padding-top: 45px;
+	font-size: 24px;
+	line-height: 24px;
+	font-weight: 300;
+}	
+.features__title:last-child {
+	padding-bottom: 40px;
+}
+
 	
-	&__title { 
-		text-align: center;
-		padding: 40px;
-		font-size: 24px;
-		line-height: 24px;
-		font-weight: 300;
-	}
+.features__wrapper {
+	position: relative;
+	background-color: #f2f2f2;
+	background-image: url("/img/bg-triangle-white.svg");
+	background-repeat: no-repeat;
+	background-position: top;
+	background-size: contain;
+}
 	
-	&__wrapper {
-		background: #f2f2f2;
-	}
+.features__list {
+	padding-top: 45px;
+	padding-bottom: 325px;
+	background-image: url("/img/iphone-screen-mobile@1x.png");
+	background-repeat: no-repeat;
+	background-size: 160px auto;
+	background-position: center 590px;
+}
 	
-	&__list {
-		padding-top: 45px;
-		padding-bottom: 325px;
-		background-image: url("/img/iphone-screen-mobile@1x.png");
-		background-repeat: no-repeat;
-		background-size: 160px auto;
-		background-position: center 565px;
-	}
-	
-	&__item {
-		padding: 0 20px;
-		padding-top: 40px;
-		text-align: center;
-		
-		&-title {
-			color: #000;
-		}
-	}
+.features__item {
+	padding-top: 40px;
+	text-align: center;
+}
+.features__item-title {
+	color: #000;		
 }
 
 @media (min-width: 700px) {
 	.features__title { 
-		padding: 0 10px;
+		padding: 0px;
 		padding-top: 60px;
 		font-size: 40px;
 		line-height: 40px;
-		
-		&--second {
-			padding: 0 140px;
-			padding-bottom: 50px;
-
-		}
 	}
 	
-	.phone-tablet {
+	.features__title:last-child {
+		padding: 0 40px;
+		padding-bottom: 50px;
+	}
+	.container-center--phone-tablet {
 		background-image: url("/img/iphone-screen-mobile@1x.png");
 		background-repeat: no-repeat;
 		background-size: 280px auto;
@@ -72,18 +77,16 @@
 
 @media (min-width: 1200px) {
 	.features__title {
-		padding: 0 100px;
 		padding-top: 85px;
 		font-size: 50px;
 		line-height: 50px;
-		
-		&--second {
-			padding: 0 260px;
-			padding-bottom: 85px;
-		}
+	}	
+	.features__title:last-child {
+		padding: 0 260px;
+		padding-bottom: 85px;
 	}
 	
-	.phone-tablet {
+	.container-center--phone-tablet {
 		background-image: none;
 	}
 	
@@ -101,12 +104,11 @@
 		background-repeat: no-repeat;
 		background-size: 300px auto;
 		background-position: center bottom;
-		
-		&-title {
-			padding-top: 60px;
-			padding-bottom: 30px;
-			font: 700 30px/30px OpenSans, Arial, sans-serif;
-		}
+	}	
+	.features__item-title {
+		padding-top: 60px;
+		padding-bottom: 30px;
+		font-size: 32px;
+		line-height: 32px;
 	}
-	
 }

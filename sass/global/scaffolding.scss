@@ -3,6 +3,7 @@ a {
 	color: $links-color;
 }
 body {
+	min-width: 320px;
 	padding: 0;
 	margin: 0;
 	font-size: 14px;
@@ -10,7 +11,7 @@ body {
 	font-family: "Open Sans", "Arial", sans-serif;
 	font-weight: 400;
 	color: $text-color;
-	background: $body-color;
+//	background: $body-color;
 }
 img {
 	max-width: 100%;
@@ -28,5 +29,4 @@ h1, h2, h3, p {
 .container-center {
 	@include container;
 	@include clearfix;
-	outline: 2px solid pink;
 }
