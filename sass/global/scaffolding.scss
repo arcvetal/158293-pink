@@ -3,6 +3,7 @@ a {
 	color: $links-color;
 }
 body {
+	min-width: 320px;
 	padding: 0;
 	margin: 0;
 	font-size: 14px;
@@ -10,7 +11,6 @@ body {
 	font-family: "Open Sans", "Arial", sans-serif;
 	font-weight: 400;
 	color: $text-color;
-	background: $body-color;
 }
 img {
 	max-width: 100%;
@@ -21,7 +21,11 @@ ul {
 	padding: 0;
 	list-style: none;
 }
+h1, h2, h3, p {
+	margin: 0;
+	padding: 0;
+}
 .container-center {
 	@include container;
-	outline: 2px solid pink;
+	@include clearfix;
 }
