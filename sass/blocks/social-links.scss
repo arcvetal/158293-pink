@@ -6,9 +6,9 @@
 .social-link {
 	display: inline-block;
     vertical-align: top;
-    margin-right: 7px;
     width: 45px;
     height: 45px;
+	margin-right: 7px;
     font-size: 0;
     border: 3px solid #e9ebec;
     border-radius: 50%;
@@ -23,14 +23,17 @@
 		opacity: 0.1;
 	}
 }
+
 .social-link--tw {
 	background-image: url("/img/icon-twitter.svg");
 	background-size: 18px 15px;
 }
+
 .social-link--fb {
 	background-image: url("/img/icon-facebook.svg");
 	background-size:  9px 19px;
 }
+
 .social-link--yt {
 	margin-right: 0;
 	background-image: url("/img/icon-youtube.svg");
@@ -42,11 +45,13 @@
 		margin-top: 40px;
 		margin-left: -10px;
 	}
+	
 	.pink-form .social-links
 	.pink-photo .social-links{
 		margin-top: 20px;
 		margin-left: 25px;
 	}
+	
 	.pink-photo .social-links {
 		margin-top: 40px;
 		margin-left: 15px;

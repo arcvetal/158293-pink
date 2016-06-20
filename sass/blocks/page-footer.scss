@@ -17,8 +17,8 @@
 	height: 200px;
 	background-image: url("/img/bg-map-mobile@1x.png");
 	background-repeat: no-repeat;
-	background-position: center;
-	background-size: contain;
+	background-position: center -200px;
+	background-size: auto;
 	
 	&:after {
 		position: absolute;
@@ -87,6 +87,8 @@
 	}
 	.page-footer__map {
 		height: 380px;
+		background-image: url("/img/bg-map-tablet@1x.jpg");
+		background-position: center -100px;
 	}
 	.page-footer__links-wrapper {
 		display: flex;
@@ -99,6 +101,9 @@
 @media (min-width: 1200px) {
 	.page-footer__map {
 		min-height: 520px;
+		background-image: url("/img/bg-map-desktop@1x.jpg");
+		background-position: center -50px;
+		background-size: cover;
 	}
 	.page-footer__links-wrapper {
 		padding: 30px 0;

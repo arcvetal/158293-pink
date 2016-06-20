@@ -10,11 +10,12 @@
 		display: none;
 	}
 }
+
 .reviews__item {
-	font: 400 14px/30px OpenSans, Arial, sans-serif;
-	text-align: center;
 	padding-top: 45px;
 	padding-bottom: 120px;
+	font: 400 14px/30px OpenSans, Arial, sans-serif;
+	text-align: center;	
 }
 
 .reviews__item-title {
@@ -36,13 +37,14 @@
     text-align:center;
     z-index: 1000;
 }
+
 .reviews__toggle {
 	display: inline-block;
 	vertical-align: middle;
 	width: 6px;
 	height: 6px;
 	margin-right: 12px;
-	background: #bec2c7;
+	background-color: #bec2c7;
 	background-clip: content-box;
 	border: 3px solid transparent;
 	border-radius: 50%;
@@ -55,10 +57,11 @@
 		background-color: #e9ebec;
 	}
 }
+
 #review-input-1:checked ~ .reviews__toggles label[for="review-input-1"],
 #review-input-2:checked ~ .reviews__toggles label[for="review-input-2"],
 #review-input-3:checked ~ .reviews__toggles label[for="review-input-3"] {
-	background: transparent;
+	background-color: transparent;
 	border-color: #283645;
 }
 
@@ -68,6 +71,7 @@
 		flex-direction: column;
 		font-size: 18px;
 	}
+	
 	.reviews__item-title {
 		margin-top: 35px;
 		margin-bottom: 0px;
@@ -77,11 +81,12 @@
 		
 	.reviews__item-subtitle {
 		display: block;
-		order: 3;
 		font-size: 14px;
+		order: 3;
 	}
 	
 }
+
 @media (min-width: 1200px) {
 	.reviews__list {
 		position: relative;
@@ -90,15 +95,18 @@
 		background-position: center 70px;
 		background-size: auto;
 	}
+	
 	.reviews__item {
 		padding: 0 130px;
 		padding-top: 190px;
 		padding-bottom: 130px;
 		
 	}
+	
 	.reviews__item  span {
 		display: none;
 	}
+	
 	.reviews__item-title {
 		font-size: 24px;
 	}
@@ -106,9 +114,11 @@
 	.reviews__item-subtitle {
 		font-size: 18px;
 	}
+	
 	.reviews__toggles {
 		display: none;
 	}
+	
 	.reviews__arrow-left,
 	.reviews__arrow-right {
 		position: absolute;
@@ -124,8 +134,10 @@
 			border-color: #e9ebec;
 		}
 	}
+	
 	.reviews__arrow-left {
 		left: 0;
+		
 		&:after {
 			position: absolute;
 			content: "";
@@ -143,6 +155,7 @@
 	
 	.reviews__arrow-right {
 		right: 0;
+		
 		&:after {
 			position: absolute;
 			content: "";
@@ -155,6 +168,5 @@
 			transform: rotate(-45deg);
 			z-index: 10;
 		}
-		
 	}
 }

@@ -20,6 +20,7 @@
 		padding-top: 0;
 		background-image: none;
 	}
+	
 	.intro__title {
 		display: block;
 		width: 200px;
@@ -31,6 +32,7 @@
 		text-align: center;
 	}
 }
+
 @media (min-width: 1200px) {
 	.intro__title {
 		width: 300px;

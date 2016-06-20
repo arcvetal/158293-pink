@@ -5,12 +5,13 @@
 @media (min-width: 700px) {
 	.research {
 		display: block;
-		background-color: #fff;
 		font-size: 14px;
 		line-height: 24px;
 		text-align: left;
 		font-weight: 400;
+		background-color: #fff;
 	}
+	
 	.research__wrapper {
 		position: relative;
 		padding-top: 100px;
@@ -75,11 +76,13 @@
 	}
 	
 }
+
 @media (min-width: 1200px) {
 	.research {
 		padding-bottom: 55px;
-		background: #f2f2f2;
+		background-color: #f2f2f2;
 	}
+	
 	.research__wrapper {
 		padding-left: 370px;
 		background-size: 300px 348px;
@@ -103,9 +106,9 @@
 		font-weight: 400;
 		font-family: "OpenSans", "Arial", sans-serif;
 	}
+	
 	.research__link {
 		padding: 0;
 		font-size: 19px;
 	}
-	
 }

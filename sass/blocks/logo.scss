@@ -1,15 +1,18 @@
 .logo {
 	width: 80px;
 }
+
 .logo a{
 	position: relative;
 	display: block;
 	font-size: 0;
 }
+
 .logo--header {
 	float: left;
 	padding: 17px 0;
 }
+
 .logo--header a {
 	&:after {
 		position: absolute;
@@ -45,6 +48,7 @@
 	margin-top: 35px;
 	margin-bottom: 35px;
 }
+
 .logo--footer a {
 	padding-bottom: 11px;
 	padding-top: 12px;
@@ -77,6 +81,7 @@
 		margin-bottom: 10px;
 		padding: 0;
 	}
+	
 	.logo--header a {
 		padding: 10px 0;
 		

@@ -4,6 +4,7 @@
 	width: 100%;
 	margin-bottom: 20px;
 }
+
 .post--panorama-day {
 	position: relative;
 	
@@ -24,6 +25,7 @@
 		background-color: #d22856;
 	}
 }
+
 .post__photo,
 .blog-posts__img {
 	line-height: 0;
@@ -37,6 +39,7 @@
 	line-height: 24px;
 	background-color: #f2f2f2;
 }
+
 .post__bloger-name {
 	margin-top: 14px;
 	font-weight: 700;
@@ -47,6 +50,7 @@
 		color: #5e6873;
 	}
 }
+
 .post__likes {
 	position: relative;
 	margin-top: 10px;
@@ -71,9 +75,11 @@
 	.post__content {
 		padding-left: 25px;
 	}
+	
 	.post__bloger-name {
 		margin-top: 25px;
 	}
+	
 	.post__likes {
 		margin-top: auto;
 		padding: 0;
@@ -86,13 +92,16 @@
 			height: 30px;
 		}
 	}
+	
 	.post--panorama-day:after {
 		top: 60px;
 		right: 40px;
 	}
+	
 	.post--panorama-day .post__photo img {
 		height: 512px;
 	}
+	
 	.post--panorama-day .post__content {
 		margin-bottom: 33px;
 		flex-direction: row;
@@ -100,16 +109,18 @@
 		justify-content: space-between;
 		align-items: baseline;
 	}
+	
 	.post--panorama-day .post__bloger-name {
 		margin-top: 30px;
 		padding-top: 0;
 		order: -2;
 	} 
+	
 	.post--panorama-day .post__comment {
 		margin: 0;
 		margin-bottom: 20px;
-		
 	}
+	
 	.post--panorama-day .post__likes {
 		position: relative;
 		margin: 0;
@@ -140,6 +151,7 @@
 	.post__content {
 		min-height: 155px;
 	}
+	
 	.post--panorama-day .post__content {
 		min-height: auto;
 	}
@@ -149,13 +161,16 @@
 	.post--panorama-day .post__bloger-name {
 		margin-top: 23px;
 	}
+	
 	.post--panorama-day:after {
 		top: 55px;
 		right: 130px;
 	}
+	
 	.post--panorama-day .post__photo img {
 		height: 506px;
 	}
+	
 	.post--panorama-day .post__content {
 		margin-bottom: 0;
 	}
@@ -163,6 +178,7 @@
 	.post {
 		margin-bottom: 55px;
 	}
+	
 	.post:nth-child(3n) {
 		margin-right: 0;
 	}
