@@ -21,7 +21,7 @@
 		left: 0;
 		width: 100%;
 		height: 100%;
-		background-image: url("/img/logo-pink-white-mobile.svg");
+		background-image: url("../img/logo-pink-white-mobile.svg");
 		background-repeat: no-repeat;
 		background-position: center;
 		background-size: contain;
@@ -34,11 +34,11 @@
 		left: 0;
 		width: 100%;
 		height: 100%;
-		background-image: url("/img/logo-pink-white-mobile — hover.svg");
+		background-image: url("../img/logo-pink-white-mobile — hover.svg");
 	}
 	
 	&:active:after {
-		background-image: url("/img/logo-pink-white-mobile.svg");
+		background-image: url("../img/logo-pink-white-mobile.svg");
 		opacity: 0.3;
 	}
 }
@@ -59,18 +59,18 @@
 		left: 0;
 		width: 100%;
 		height: 100%;
-		background-image: url("/img/logo-pink-blue-mobile.svg");
+		background-image: url("../img/logo-pink-blue-mobile.svg");
 		background-repeat: no-repeat;
 		background-position: center;
 		background-size: cover;
 	}
 	
 	&:hover:after {
-		background-image: url("/img/logo-pink-blue-mobile — hover.svg");
+		background-image: url("../img/logo-pink-blue-mobile — hover.svg");
 	}
 	
 	&:active:after {
-		background-image: url("/img/logo-pink-blue-mobile.svg");
+		background-image: url("../img/logo-pink-blue-mobile.svg");
 		opacity: 0.3;
 	}
 }
@@ -86,17 +86,17 @@
 		padding: 10px 0;
 		
 		&:after {
-			background-image: url("/img/logo-pink-white-tablet.svg");
+			background-image: url("../img/logo-pink-white-tablet.svg");
 			background-position: center;
 			background-size: contain;
 		}
 		
 		&:hover:after {
-			background-image: url("/img/logo-pink-white-tablet — hover.svg");
+			background-image: url("../img/logo-pink-white-tablet — hover.svg");
 		}
 		
 		&:active:after {
-			background-image: url("/img/logo-pink-white-tablet.svg");
+			background-image: url("../img/logo-pink-white-tablet.svg");
 			opacity: 0.3;
 		}
 	}
@@ -106,30 +106,30 @@
 @media (min-width: 1200px) {
 	.logo--header a {
 		&:after {
-			background-image: url("/img/logo-pink-white-desktop.svg");
+			background-image: url("../img/logo-pink-white-desktop.svg");
 		}
 		
 		&:hover:after {
-			background-image: url("/img/logo-pink-white-desktop — hover.svg");
+			background-image: url("../img/logo-pink-white-desktop — hover.svg");
 		}
 		
 		&:active:after {
-			background-image: url("/img/logo-pink-white-desktop.svg");
+			background-image: url("../img/logo-pink-white-desktop.svg");
 			opacity: 0.3;
 		}
 	}
 	
 	.logo--footer a {
 		&:after {
-			background-image: url("/img/logo-pink-blue-desktop-footer.svg");
+			background-image: url("../img/logo-pink-blue-desktop-footer.svg");
 		}
 		
 		&:hover:after {
-			background-image: url("/img/logo-pink-blue-desktop-footer —h.svg");
+			background-image: url("../img/logo-pink-blue-desktop-footer —h.svg");
 		}
 		
 		&:active:after {
-			background-image: url("/img/logo-pink-blue-desktop-footer.svg");
+			background-image: url("../img/logo-pink-blue-desktop-footer.svg");
 			opacity: 0.3;
 		}
 	}

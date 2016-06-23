@@ -1,13 +1,13 @@
 .intro {
 	padding-top: 393px;
-	background-image: url("/img/iphone-hand-mobile@1x.png");
+	background-image: url("../img/iphone-hand-mobile@1x.png");
 	background-repeat: no-repeat;
 	background-size: auto;
 	background-position: center bottom;
 	z-index: 20;
 	
 	@media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
-		background-image: url(/img/iphone-hand-mobile@2x.png);
+		background-image: url(../img/iphone-hand-mobile@2x.png);
 		background-size:  258px auto;
 	}
 }
