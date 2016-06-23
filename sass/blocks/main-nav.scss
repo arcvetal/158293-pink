@@ -135,7 +135,8 @@
 
 @media (min-width: 1200px) {
 	.main-nav {
-		@include container;
+		width: 940px;
+		margin: 0 auto;
 		@include clearfix;
 	}
 	.main-nav__list {

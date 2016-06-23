@@ -541,7 +541,8 @@ input[type="checkbox"]:checked + .page-form__achive-label:after {
 
 @media (min-width: 1200px) {
 	.page-form {
-		@include container;
+		width: 940px;
+		margin: 0 auto;
 	}
 	
 	.page-form__item--apps .container-center {
