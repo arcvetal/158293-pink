@@ -1,6 +1,11 @@
 .blog-posts {
 	font-size: 0;
 }
+.blog-posts__wrapper {
+	display: flex;
+	flex-wrap: wrap;
+	@include container;
+}
 
 .blog-posts__title {
 	padding: 45px 15px;
@@ -10,6 +15,7 @@
 }
 
 .blog-posts__title--second {
+	flex-grow: 1;
 	padding-top: 15px;
 	padding-bottom: 43px;
 }

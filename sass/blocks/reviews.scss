@@ -88,6 +88,9 @@
 }
 
 @media (min-width: 1200px) {
+	.reviews .container-center {
+		position: relative;
+	}
 	.reviews__list {
 		position: relative;
 		background-image: url("../img/icon-quotes.svg");

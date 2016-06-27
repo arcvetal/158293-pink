@@ -252,8 +252,9 @@ input[type="checkbox"]:checked + .page-form__achive-label:after {
 }
 //popup
 
-.page-form__popup-fail,
-.page-form__popup-sent {
+
+.page-form__popup-error,
+.page-form__popup-success {
 	position: absolute;
 	display: none;
 	top: 1167px;
@@ -266,14 +267,17 @@ input[type="checkbox"]:checked + .page-form__achive-label:after {
 	box-shadow: 0 7px 15px 0 rgba(0, 1, 1, .15);
 	z-index: 1001;
 }
+.page-form__popup-block {
+	display: block;
+}
 
-.page-form__popup-sent {
+.page-form__popup-success {
 	top: 1640px;
 	background-color: #f2f2f2;
 }
 
-.page-form__popup-fail h2,
-.page-form__popup-sent h2 {
+.page-form__popup-error h2,
+.page-form__popup-success h2 {
 	padding: 40px 20px;
 	font-size: 18px;
 	line-height: 24px;
@@ -282,8 +286,8 @@ input[type="checkbox"]:checked + .page-form__achive-label:after {
 	background-color: #fff;
 }
 
-.page-form__popup-fail p,
-.page-form__popup-sent p {
+.page-form__popup-error p,
+.page-form__popup-success p {
 	padding: 0 25px;
 	padding-bottom: 35px;
 	font-size: 14px;
@@ -316,7 +320,7 @@ input[type="checkbox"]:checked + .page-form__achive-label:after {
 	}
 }
 
-.page-form__popup-fail .page-form__popup-btn {
+.page-form__popup-error .page-form__popup-btn {
 	margin: 0;
 }
 
@@ -512,26 +516,26 @@ input[type="checkbox"]:checked + .page-form__achive-label:after {
 		margin-right: 0;
 	}
 	
-	.page-form__popup-fail,
-	.page-form__popup-sent {
+	.page-form__popup-error,
+	.page-form__popup-success {
 		top: 909px;
 		width: 460px;
 		margin-left: -230px;
 	}
 	
-	.page-form__popup-sent {
+	.page-form__popup-success {
 		top: 1382px;
 	}
 	
-	.page-form__popup-fail h2,
-	.page-form__popup-sent h2 {
+	.page-form__popup-error h2,
+	.page-form__popup-success h2 {
 		padding: 40px 120px; 
 		font-size: 30px;
 		line-height: 30px;
 	}
 	
-	.page-form__popup-fail p,
-	.page-form__popup-sent p {
+	.page-form__popup-error p,
+	.page-form__popup-success p {
 		padding-left: 90px;
 		padding-right: 90px;
 		font-size: 18px;
@@ -648,17 +652,17 @@ input[type="checkbox"]:checked + .page-form__achive-label:after {
 		}
 	}
 	
-	.page-form__popup-sent {
+	.page-form__popup-success {
 		width: 780px;
 		margin-left: -390px;
 	}
 	
-	.page-form__popup-sent p {
+	.page-form__popup-success p {
 		padding-left: 200px;
 		padding-right: 200px;
 	}
 	
-	.page-form__popup-sent .page-form__popup-btn {
+	.page-form__popup-success .page-form__popup-btn {
 		width: 460px;
 	}
 }
