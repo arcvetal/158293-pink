@@ -9,7 +9,6 @@
 @mixin container {
   width: 280px;
   margin: 0 auto;
-	outline: 2px solid pink;
 
 	@media (min-width: 700px) {
     	width: 620px;

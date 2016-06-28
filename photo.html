@@ -5,22 +5,21 @@
 	<title>Pink</title>
 	<meta name="viewport" content="width=device-width,initial-scale=1">
   	<meta name="format-detection" content="telephone=no">
-	<link href="http://fonts.googleapis.com/css?family=Open+Sans:400,700,300&amp;subset=latin,cyrillic-ext" rel="stylesheet" type="text/css">
 	<link rel="stylesheet" href="css/style.css">
 </head>
-<body>
+<body class="pink-photo">
 	<header class="page-header page-header--photo">
 		<div class="page-header__wrapper page-header__wrapper--closed page-header__wrapper--nojs">
 			<nav class="main-nav">
 				<div class="logo logo--header">
-					<a href="#">Pink</a>
+					<a href="index.html">Pink</a>
 				</div>
 				<a href="#" class=" main-nav__toggle"></a>
 				<ul class="main-nav__list">
-					<li class="main-nav__item main-nav__item--active"><a>Главная</a></li>
-					<li class="main-nav__item"><a href="#">Фотографии</a></li>
-					<li class="main-nav__item"><a href="#">Конкурс</a></li>
-					<li class="main-nav__item"><a href="#">HTML Academy</a></li>
+					<li class="main-nav__item"><a href="index.html">Главная</a></li>
+					<li class="main-nav__item main-nav__item--active"><a>Фотографии</a></li>
+					<li class="main-nav__item"><a href="form.html">Конкурс</a></li>
+					<li class="main-nav__item"><a href="https://htmlacademy.ru">HTML Academy</a></li>
 				</ul>
 			</nav>
 		</div>
@@ -29,12 +28,18 @@
 	<main>
 		<div class="blog-posts">
 			<div class="container-center">
-				<p class="blog-posts__title">Взгляните на фотографии, которые выкладывают пользователи!<br> Видите, как не хватает ваших?</p>
+				<p class="blog-posts__title">Взгляните на фотографии, которые выкладывают пользователи! Видите, как не хватает ваших?</p>
 			</div>
 
 			<article class="post post--panorama-day">
 				<div class="post__photo">
-					<a href="#"><img src="/img/panorama-mobile@1x.jpg" width="100%" height="137"></a>
+					<a href="#">
+             			<picture>
+              				<source media="(min-width: 1200px)" srcset="img/panorama-desktop@1x.jpg 1x, img/panorama-desktop@2x.jpg 2x">
+              				<source media="(min-width: 700px)" srcset="img/panorama-tablet@1x.jpg 1x, img/panorama-tablet@2x.jpg 2x">
+              				<img src="img/panorama-mobile@1x.jpg" srcset="img/panorama-mobile@2x.jpg 2x" alt="Панорама дня">
+            			</picture>
+            		</a>
 				</div>
 				<div class="container-center">
 					<div class="post__content">
@@ -45,10 +50,16 @@
 				</div>
 			</article>
 
-			<div class="container-center">
+			<div class="blog-posts__wrapper">
 				<article class="post">
 					<div class="post__photo">
-						<a href="#"><img src="img/photo-1-mobile@1x.jpg" width="300" height="180"></a>
+						<a href="#">
+							<picture>
+              					<source media="(min-width: 1200px)" srcset="img/photo-1-desktop@1x.jpg 1x, img/photo-1-desktop@2x.jpg 2x">
+              					<source media="(min-width: 700px)" srcset="img/photo-1-tablet@1x.jpg 1x, img/photo-1-tablet@2x.jpg 2x">
+              					<img src="img/photo-1-mobile@1x.jpg" srcset="img/photo-1-mobile@2x.jpg 2x" alt="Фото Левона">
+            				</picture>
+						</a>
 					</div>
 					<div class="post__content">
 						<p class="post__bloger-name">Левон <time datetime="2016-06-06 11:00">(5 часов назад)</time></p>
@@ -59,7 +70,13 @@
 
 				<article class="post">
 					<div class="post__photo">
-						<a href="#"><img src="img/photo-2-mobile@1x.jpg" width="300" height="180"></a>
+						<a href="#">
+							<picture>
+              					<source media="(min-width: 1200px)" srcset="img/photo-2-desktop@1x.jpg 1x, img/photo-2-desktop@2x.jpg 2x">
+              					<source media="(min-width: 700px)" srcset="img/photo-2-tablet@1x.jpg 1x, img/photo-2-tablet@2x.jpg 2x">
+              					<img src="img/photo-2-mobile@1x.jpg" srcset="img/photo-2-mobile@2x.jpg 2x" alt="Фото Антона">
+            				</picture>
+						</a>
 					</div>
 					<div class="post__content">
 						<p class="post__bloger-name">Антон <time datetime="2016-06-06 11:00">(12 часов назад)</time></p>
@@ -70,7 +87,13 @@
 
 				<article class="post">
 					<div class="post__photo">
-						<a href="#"><img src="img/photo-3-mobile@1x.jpg" width="300" height="180"></a>
+						<a href="#">
+							<picture>
+              					<source media="(min-width: 1200px)" srcset="img/photo-3-desktop@1x.jpg 1x, img/photo-3-desktop@2x.jpg 2x">
+              					<source media="(min-width: 700px)" srcset="img/photo-3-tablet@1x.jpg 1x, img/photo-3-tablet@2x.jpg 2x">
+              					<img src="img/photo-3-mobile@1x.jpg" srcset="img/photo-3-mobile@2x.jpg 2x" alt="Фото Бориса">
+            				</picture>
+						</a>
 					</div>
 					<div class="post__content">
 						<p class="post__bloger-name">Борис <time datetime="2016-06-06 11:00">(20 часов назад)</time></p>
@@ -81,7 +104,13 @@
 
 				<article class="post">
 					<div class="post__photo">
-						<a href="#"><img src="img/photo-4-mobile@1x.jpg" width="300" height="180"></a>
+						<a href="#">
+							<picture>
+              					<source media="(min-width: 1200px)" srcset="img/photo-4-desktop@1x.jpg 1x, img/photo-4-desktop@2x.jpg 2x">
+              					<source media="(min-width: 700px)" srcset="img/photo-4-tablet@1x.jpg 1x, img/photo-4-tablet@2x.jpg 2x">
+              					<img src="img/photo-4-mobile@1x.jpg" srcset="img/photo-4-mobile@2x.jpg 2x" alt="Фото Сергея">
+            				</picture>
+						</a>
 					</div>
 					<div class="post__content">
 						<p class="post__bloger-name">Сергей <time datetime="2016-06-06 11:00">(25 часов назад)</time></p>
@@ -92,7 +121,13 @@
 
 				<article class="post">
 					<div class="post__photo">
-						<a href="#"><img src="img/photo-5-mobile@1x.jpg" width="300" height="180"></a>
+						<a href="#">
+							<picture>
+              					<source media="(min-width: 1200px)" srcset="img/photo-5-desktop@1x.jpg 1x, img/photo-5-desktop@2x.jpg 2x">
+              					<source media="(min-width: 700px)" srcset="img/photo-5-tablet@1x.jpg 1x, img/photo-5-tablet@2x.jpg 2x">
+              					<img src="img/photo-5-mobile@1x.jpg" srcset="img/photo-5-mobile@2x.jpg 2x" alt="Фото Максима">
+            				</picture>
+						</a>
 					</div>
 					<div class="post__content">
 						<p class="post__bloger-name">Максим <time datetime="2016-06-06 11:00">(40 часов назад)</time></p>
@@ -103,7 +138,13 @@
 
 				<article class="post">
 					<div class="post__photo">
-						<a href="#"><img src="img/photo-6-mobile@1x.jpg" width="300" height="180"></a>
+						<a href="#">
+							<picture>
+              					<source media="(min-width: 1200px)" srcset="img/photo-6-desktop@1x.jpg 1x, img/photo-6-desktop@2x.jpg 2x">
+              					<source media="(min-width: 700px)" srcset="img/photo-6-tablet@1x.jpg 1x, img/photo-6-tablet@2x.jpg 2x">
+              					<img src="img/photo-6-mobile@1x.jpg" srcset="img/photo-6-mobile@2x.jpg 2x" alt="Фото Надежды">
+            				</picture>
+						</a>
 					</div>
 					<div class="post__content">
 						<p class="post__bloger-name">Надежда <time datetime="2016-06-06 11:00">(45 часов назад)</time></p>
@@ -111,22 +152,55 @@
 						<p class="post__likes">Нравится: <span>2560</span></p>
 					</div>
 				</article>
-				<p class="blog-posts__title">Затмите их всех!<br>Выкладывайте все, что накопилось в телефоне!</p>
+				<p class="blog-posts__title blog-posts__title--second">Затмите их всех!<br>Выкладывайте все, что накопилось в телефоне!</p>
 			</div>
 			
 			<form class="blog-posts__form" action="#" method="post">
 				<div class="container-center">
 					<div class="blog-posts__img">
-						<img src="img/photo-7-mobile@1x.jpg" width="100%" height="374" alt="">
+					<a href="#">
+						<picture>
+              				<source media="(min-width: 1200px)" srcset="img/photo-7-desktop@1x.jpg 1x, img/photo-7-desktop@2x.jpg 2x">
+              				<source media="(min-width: 700px)" srcset="img/photo-7-tablet@1x.jpg 1x, img/photo-7-tablet@2x.jpg 2x">
+              				<img src="img/photo-7-mobile@1x.jpg" srcset="img/photo-7-mobile@2x.jpg 2x" alt="Фото зимняя дорога">
+            			</picture>
+            			</a>
 					</div>
 					<div class="blog-posts__tools-wrapper">
 						<div class="blog-posts__tools">
 							<input type="radio" name="toggle-tool" id="tool-1" checked>
 							<input type="radio" name="toggle-tool" id="tool-2">
 							<input type="radio" name="toggle-tool" id="tool-3">
-							<label for="tool-1"></label>
-							<label for="tool-2"></label>
-							<label for="tool-3"></label>
+							
+							<label for="tool-1">
+								<svg id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 							width="48px" height="48px" viewBox="0 0 48 48" enable-background="new 0 0 48 48" xml:space="preserve">
+									<path fill="none" d="M0,0h48v48H0V0z"/>
+									<path class="icon-tool icon-crop" fill="#b5b9be" d="M34,30h4V14c0-2.21-1.79-4-4-4H18v4h16V30z M14,34V2h-4v8H2v4h8v20c0,2.21,1.79,4,4,4h20v8h4v-8h8v-4H14z"/>
+								</svg>
+							</label>
+							
+							<label for="tool-2">
+								<svg id="Layer_2" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 							width="48px" height="48px" viewBox="0 0 48 48" enable-background="new 0 0 48 48" xml:space="preserve">
+									<path fill="none" d="M0,0h48v48H0V0z"/>
+									<path class="icon-tool icon-fill" fill="#b5b9be" d="M33.12,17.88L15.24,0l-2.83,2.83l4.76,4.76L6.88,17.88c-1.17,1.17-1.17,3.07,0,4.24l11,11C18.46,33.71,19.23,34,20,34
+									s1.54-0.29,2.12-0.88l11-11C34.29,20.95,34.29,19.05,33.12,17.88z M10.41,20L20,10.42L29.59,20H10.41z M38,23c0,0-4,4.33-4,7
+									c0,2.21,1.79,4,4,4s4-1.79,4-4C42,27.33,38,23,38,23z"/>
+									<rect class="icon-tool icon-fill" y="40" width="48" height="3" fill="#b5b9be"/>
+								</svg>
+							</label>
+							
+							<label for="tool-3">
+								<svg id="Layer_3" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+								width="31.92px" height="31.92px" viewBox="-35.422 -7.96 31.92 31.92" enable-background="new -35.422 -7.96 31.92 31.92"
+	 							xml:space="preserve">
+									<path class="icon-tool icon-contrast" fill="#b5b9be" d="M-19.462-3.96c6.595,0,11.96,5.365,11.96,11.96s-5.365,11.96-11.96,11.96S-31.422,14.595-31.422,8
+									S-26.057-3.96-19.462-3.96 M-19.462-7.96c-8.814,0-15.96,7.145-15.96,15.96c0,8.813,7.146,15.96,15.96,15.96S-3.502,16.813-3.502,8
+									C-3.502-0.815-10.648-7.96-19.462-7.96L-19.462-7.96z"/>
+									<path class="icon-tool icon-contrast" fill="#b5b9be" d="M-19.462,16.331c4.706,0,8.52-3.813,8.52-8.52c0-4.705-3.813-8.519-8.52-8.519"/>
+								</svg>
+							</label>
 							<div class="blog-posts__range"></div>
 							<div class="blog-posts__range"></div>
 							<div class="blog-posts__range"></div>
@@ -152,7 +226,7 @@
 			</div>
 			<p class="page-footer__copyright">
 				Разработано
-				<a class="copy-link" href="https://htmlacademy.ru/">HTML Academy</a>
+				<a class="copy-link" href="https://htmlacademy.ru">HTML Academy</a>
 			</p>
 		</div>
 	</footer>

@@ -5,19 +5,20 @@
 @media (min-width: 700px) {
 	.research {
 		display: block;
-		background: #fff;
 		font-size: 14px;
 		line-height: 24px;
 		text-align: left;
 		font-weight: 400;
+		background-color: #fff;
 	}
+	
 	.research__wrapper {
 		position: relative;
 		padding-top: 100px;
-		padding-bottom: 120px;
+		padding-bottom: 80px;
 		padding-left: 310px;
 		padding-right: 10px;
-		background-image: url("/img/timer.png");
+		background-image: url("../img/icon-timer.svg");
 		background-repeat: no-repeat;
 		background-position: 0 60px;
 		background-size: 240px 277px;
@@ -30,7 +31,7 @@
     		width: 203px;
     		height: 203px;
     		text-align: center;
-    		font-size: 120px;
+    		font-size: 95px;
 			line-height: 175px;
 			font-family: "OpenSans", "Arial", sans-serif;
 			font-weight: 700;
@@ -44,8 +45,8 @@
 	}
 		
 	.research__title {
-		padding-bottom: 25px;
-		padding-right: 120px;
+		padding-bottom: 5px;
+		padding-right: 130px;
 		font-size: 30px;
 		line-height: 36px;
 		font-weight: 700;
@@ -53,12 +54,13 @@
 	}
 		
 	.research__content {
-		padding-bottom: 40px;
+		padding-bottom: 12px;
 	}
 		
 	.research__link {
-		font-size: 18px;
-		line-height: 30px;
+		padding-left: 10px;
+		font-size: 14px;
+		line-height: 24px;
 		font-weight: 400;
 		font-family: "OpenSans", "Arial", sans-serif;
 		color: #d22856;
@@ -74,25 +76,30 @@
 	}
 	
 }
+
 @media (min-width: 1200px) {
 	.research {
-		background: #f2f2f2;
+		padding-bottom: 55px;
+		background-color: #f2f2f2;
 	}
+	
 	.research__wrapper {
 		padding-left: 370px;
 		background-size: 300px 348px;
-		background-position: 0 30px;
+		background-position: 0 0px;
 		
 		&:after {
-			top: 100px;
+			top: 70px;
 			left: 23px;
 			width: 254px;
 			height: 254px;
+			font-size: 120px;
 			line-height: 220px;
 		}
 	}
 		
 	.research__content {
+		margin-top: 10px;
 		padding-right: 40px;
 		font-size: 18px;
 		line-height: 30px;
@@ -100,4 +107,8 @@
 		font-family: "OpenSans", "Arial", sans-serif;
 	}
 	
+	.research__link {
+		padding: 0;
+		font-size: 19px;
+	}
 }

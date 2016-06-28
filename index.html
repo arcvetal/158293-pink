@@ -5,7 +5,6 @@
 	<title>Pink</title>
 	<meta name="viewport" content="width=device-width,initial-scale=1">
   	<meta name="format-detection" content="telephone=no">
-	<link href="http://fonts.googleapis.com/css?family=Open+Sans:400,700,300&amp;subset=latin,cyrillic-ext" rel="stylesheet" type="text/css">
 	<link rel="stylesheet" href="css/style.css">
 </head>
 <body class="page-index">
@@ -13,14 +12,14 @@
 		<div class="page-header__wrapper page-header__wrapper--closed page-header__wrapper--nojs">
 			<nav class="main-nav">
 				<div class="logo logo--header">
-					<a href="#">Pink</a>
+					<a href="index.html">Pink</a>
 				</div>
 				<a href="#" class=" main-nav__toggle"></a>
 				<ul class="main-nav__list">
 					<li class="main-nav__item main-nav__item--active"><a>Главная</a></li>
-					<li class="main-nav__item"><a href="#">Фотографии</a></li>
-					<li class="main-nav__item"><a href="#">Конкурс</a></li>
-					<li class="main-nav__item"><a href="#">HTML Academy</a></li>
+					<li class="main-nav__item"><a href="photo.html">Фотографии</a></li>
+					<li class="main-nav__item"><a href="form.html">Конкурс</a></li>
+					<li class="main-nav__item"><a href="https://htmlacademy.ru">HTML Academy</a></li>
 				</ul>
 			</nav>
 		</div>
@@ -64,7 +63,7 @@
 				</div>
 			</header>
 			<div class="features__wrapper">
-				<div class="container-center container-center--phone-tablet">
+				<div class="container-center container-center--phone">
 					<ul class="features__list">
 						<li class="features__item">
 							<h3 class="features__item-title">Поднимает настроение</h3>
@@ -102,14 +101,14 @@
 					<label class="reviews__toggle" for="review-input-3" ></label>
 				</div>
 				<ul class="reviews__list">
-					<a class="reviews__arrow-left" href="#"></a>
-					<a class="reviews__arrow-right" href="#"></a>
 					<li class="reviews__item">
 						<h3 class="reviews__item-title">Николай Петров</h3>
 						<p class="reviews__item-subtitle">25 лет, водитель трамвая</p>
-						<p>«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»</p>
+						<p><span>«</span>Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!<span>»</span></p>
 					</li>
 				</ul>
+				<a class="reviews__arrow-left" href="#"></a>
+				<a class="reviews__arrow-right" href="#"></a>
 			</div>
 		</div>
 		<div class="prices">
@@ -163,7 +162,7 @@
 						</td>
 						<td>
 							<span class="prices__cell">Смайлики</span>
-							<span class="prices__cell prices__cell-no">Нет</span>
+							<span class="prices__cell prices__cell-yes">Да</span>
 						</td>
 						<td>
 							<span class="prices__cell">Смайлики</span>
@@ -193,7 +192,7 @@
 	</main>
 	<footer class="page-footer">
 		<div class="contacts">
-			<div class="container-center flex">
+			<div class="container-center container-center--flex">
 				<div class="contacts__title-wrapper">
 					<h2 class="contacts__title">Остались вопросы?</h2>
 					<h2 class="contacts__title">Свяжитесь с нами!</h2>
@@ -204,7 +203,7 @@
 				</div>
 				<div class="contacts__wrapper contacts__wrapper--mail">
 					<h3 class="contacts__action">Пишите:</h3>
-					<p class="contacts__info"><a href="#">mail@htmlacademy.ru</a></p>
+					<p class="contacts__info"><a href="https://htmlacademy.ru">mail@htmlacademy.ru</a></p>
 				</div>
 				<div class="contacts__wrapper contacts__wrapper--adress">
 					<h3 class="contacts__action">Приезжайте в гости:</h3>
@@ -225,12 +224,13 @@
 			</div>
 			<p class="page-footer__copyright">
 				Разработано:
-				<a class="copy-link" href="https://htmlacademy.ru/">HTML Academy</a>
+				<a class="copy-link" href="https://htmlacademy.ru">HTML Academy</a>
 			</p>
 		</div>
 	</footer>
 	<script src="js/menu-toggle.js"></script>
-	<script src="http://maps.googleapis.com/maps/api/js?sensor=false" type="text/javascript"></script>
+	<script src="https://maps.googleapis.com/maps/api/js?signed_in=true&key=AIzaSyCtbRGoprUTdJzPe-nIebN9IaebPhA5hEk">
+    </script>
 	<script src="js/map.js"></script>
 
 </body>

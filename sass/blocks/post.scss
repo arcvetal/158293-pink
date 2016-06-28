@@ -1,23 +1,49 @@
 .post {
-	display: inline-block;
-	vertical-align: top;
 	width: 100%;
 	margin-bottom: 20px;
 }
 
-.post__photo {
-	margin-bottom: -15px;
+.post--panorama-day {
+	position: relative;
+	
+	&:after {
+		position: absolute;
+		content: "Панорама дня";
+		top: 0;
+		right: 20px;
+		width: 140px;
+		height: 36px;
+		font-size: 12px;
+		line-height: 36px;
+		font-weight: 700;
+		font-family: "OpenSans", "Arial", sans-serif;
+		text-align: center;
+		text-transform: uppercase;
+		color: #fff;
+		background-color: #d22856;
+	}
 }
+
+.post--panorama-day img {
+	width: 100%;
+}
+
+.post__photo,
+.blog-posts__img {
+	line-height: 0;
+}
+
 .post__content {
 	display: flex;
 	flex-direction: column;
 	padding: 0 20px;
 	font-size: 14px;
 	line-height: 24px;
-	background: #f2f2f2;
+	background-color: #f2f2f2;
 }
+
 .post__bloger-name {
-	margin-top: 25px;
+	margin-top: 14px;
 	font-weight: 700;
 	
 	& time {
@@ -26,18 +52,19 @@
 		color: #5e6873;
 	}
 }
+
 .post__likes {
 	position: relative;
-	margin-top: 22px;
+	margin-top: 10px;
 	margin-bottom: 25px;
-	padding-left: 35px;
+	padding-left: 30px;
 	font-size: 12px;
 	line-height: 24px;
-	color: #d22856;
+	color:#d22856;
 	text-transform: uppercase;
 	
 	&:before {
-		content: url("/img/icon-heart.svg");
+		content: url("../img/icon-heart.svg");
 		position: absolute;
 		top: 0px;
 		left: 0;
@@ -47,31 +74,64 @@
 }
 
 @media (min-width: 700px) {
+	.post__content {
+		padding-left: 25px;
+	}
+	
+	.post__bloger-name {
+		margin-top: 25px;
+	}
+	
+	.post__likes {
+		margin-top: auto;
+		padding: 0;
+		&:before {
+			content: url("../img/icon-heart.svg");
+			position: absolute;
+			top: 2px;
+			left: 90%;
+			width: 30px;
+			height: 30px;
+		}
+	}
+	
+	.post--panorama-day:after {
+		top: 60px;
+		right: 40px;
+	}
+	
+	.post--panorama-day .post__photo img {
+		height: 512px;
+	}
+	
 	.post--panorama-day .post__content {
+		margin-bottom: 33px;
 		flex-direction: row;
 		flex-wrap:wrap;
 		justify-content: space-between;
+		align-items: baseline;
 	}
+	
 	.post--panorama-day .post__bloger-name {
-		width: 200px;
+		margin-top: 30px;
+		padding-top: 0;
 		order: -2;
+	} 
+	
+	.post--panorama-day .post__comment {
+		margin: 0;
+		margin-bottom: 20px;
 	}
+	
 	.post--panorama-day .post__likes {
 		position: relative;
-		width: 100px;
 		margin: 0;
-		margin-top: 30px;
 		padding: 0;
-		padding-right: 35px;
+		padding-right: 40px;
 		order: -1;
 		
 		&:before {
-			content: url("/img/icon-heart.svg");
-			position: absolute;
-			top: 3px;
-			left: 105px;
-			width: 30px;
-			height: 30px;
+			left: 108px;
 		}
 	}
 	.post {
@@ -81,6 +141,7 @@
 	.post--panorama-day {
 		width: 100%;
 	}
+	
 	
 	@media (max-width: 1200px) {
 		
@@ -93,13 +154,32 @@
 		min-height: 155px;
 	}
 	
-	.post__likes {
-		margin-top: auto;
+	.post--panorama-day .post__content {
+		min-height: auto;
 	}
-	
 }
 
 @media (min-width: 1200px) {
+	.post--panorama-day .post__bloger-name {
+		margin-top: 23px;
+	}
+	
+	.post--panorama-day:after {
+		top: 55px;
+		right: 130px;
+	}
+	
+	.post--panorama-day .post__photo img {
+		height: 506px;
+	}
+	
+	.post--panorama-day .post__content {
+		margin-bottom: 0;
+	}
+	
+	.post {
+		margin-bottom: 55px;
+	}
 	
 	.post:nth-child(3n) {
 		margin-right: 0;
