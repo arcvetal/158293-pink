@@ -12,13 +12,13 @@
 }
 .page-footer__map {
 	position: relative;
-	background-color: #e8e6dc;
 	width: 100%;
 	height: 200px;
 	background-image: url("../img/bg-map-mobile@1x.png");
 	background-repeat: no-repeat;
 	background-position: center -200px;
 	background-size: auto;
+	background-color: #e8e6dc;
 	
 	&:after {
 		position: absolute;
