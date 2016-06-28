@@ -1,0 +1,114 @@
+.research {
+	display: none;
+}
+
+@media (min-width: 700px) {
+	.research {
+		display: block;
+		font-size: 14px;
+		line-height: 24px;
+		text-align: left;
+		font-weight: 400;
+		background-color: #fff;
+	}
+	
+	.research__wrapper {
+		position: relative;
+		padding-top: 100px;
+		padding-bottom: 80px;
+		padding-left: 310px;
+		padding-right: 10px;
+		background-image: url("../img/icon-timer.svg");
+		background-repeat: no-repeat;
+		background-position: 0 60px;
+		background-size: 240px 277px;
+		
+		&:after {
+			content: "24";
+    		position: absolute;
+    		top: 117px;
+    		left: 18px;
+    		width: 203px;
+    		height: 203px;
+    		text-align: center;
+    		font-size: 95px;
+			line-height: 175px;
+			font-family: "OpenSans", "Arial", sans-serif;
+			font-weight: 700;
+    		color: #d12755;
+    		background-color: #fff;
+    		border: 13px solid #d12755;
+			box-sizing: border-box;
+    		border-radius: 50%;
+			
+		}
+	}
+		
+	.research__title {
+		padding-bottom: 5px;
+		padding-right: 130px;
+		font-size: 30px;
+		line-height: 36px;
+		font-weight: 700;
+		color: #000;
+	}
+		
+	.research__content {
+		padding-bottom: 12px;
+	}
+		
+	.research__link {
+		padding-left: 10px;
+		font-size: 14px;
+		line-height: 24px;
+		font-weight: 400;
+		font-family: "OpenSans", "Arial", sans-serif;
+		color: #d22856;
+		text-decoration: underline;
+		
+		&:hover {
+			    color: #283645;	
+		}
+		
+		&:active {
+			opacity: 0.3;
+		}
+	}
+	
+}
+
+@media (min-width: 1200px) {
+	.research {
+		padding-bottom: 55px;
+		background-color: #f2f2f2;
+	}
+	
+	.research__wrapper {
+		padding-left: 370px;
+		background-size: 300px 348px;
+		background-position: 0 0px;
+		
+		&:after {
+			top: 70px;
+			left: 23px;
+			width: 254px;
+			height: 254px;
+			font-size: 120px;
+			line-height: 220px;
+		}
+	}
+		
+	.research__content {
+		margin-top: 10px;
+		padding-right: 40px;
+		font-size: 18px;
+		line-height: 30px;
+		font-weight: 400;
+		font-family: "OpenSans", "Arial", sans-serif;
+	}
+	
+	.research__link {
+		padding: 0;
+		font-size: 19px;
+	}
+}

@@ -5,34 +5,33 @@
 	<title>Pink</title>
 	<meta name="viewport" content="width=device-width,initial-scale=1">
   	<meta name="format-detection" content="telephone=no">
-	<link href="http://fonts.googleapis.com/css?family=Open+Sans:400,700,300&amp;subset=latin,cyrillic-ext" rel="stylesheet" type="text/css">
 	<link rel="stylesheet" href="css/style.css">
 </head>
-<body>
-	<header class="page-header">
-		<div class="menu">
-			<div class="container-center">
-				<div class="logo">
-					<a class="logo__link" href="#">Pink</a>
+<body class="pink-form">
+	<header class="page-header page-header--form">
+		<div class="page-header__wrapper page-header__wrapper--closed page-header__wrapper--nojs">
+			<nav class="main-nav">
+				<div class="logo logo--header">
+					<a href="index.html">Pink</a>
 				</div>
-				<nav class="main-nav  main-nav--hidden">
-					<a href="#" class="main-nav__toggle"></a>
-					<ul class="main-nav__list">
-						<li class="main-nav__item"><a href="#">Главная</a></li>
-						<li class="main-nav__item"><a href="#">Фотографии</a></li>
-						<li class="main-nav__item"><a href="#">Конкурс</a></li>
-						<li class="main-nav__item"><a href="#">Hmtl Academy</a></li>
-					</ul>
-				</nav>
-			</div>
+				<a href="#" class=" main-nav__toggle"></a>
+				<ul class="main-nav__list">
+					<li class="main-nav__item"><a href="index.html">Главная</a></li>
+					<li class="main-nav__item"><a href="photo.html">Фотографии</a></li>
+					<li class="main-nav__item main-nav__item--active"><a>Конкурс</a></li>
+					<li class="main-nav__item"><a href="https://htmlacademy.ru">HTML Academy</a></li>
+				</ul>
+			</nav>
 		</div>
 		<h1 class="page-header__title">Конкурс на самое безбашенное путешествие с Пинк</h1>
 	</header>
 	<main>
-		<form class="page-form" action="#" method="post">
-			<div class="container-center">
-				<p class="page-form__description">Поделитесь своей историей и получите шанс выиграть ценный приз - 1000 миль на вашу бонусную карту!</p>
-				<div class="page-form__item">
+		<form class="page-form page-form--tablet" action="#" method="post">
+				<div class="container-center">
+					<p class="page-form__description">Поделитесь своей историей и получите шанс выиграть ценный приз — 1000 миль на вашу бонусную карту! <span class="page-form__desc-act">Пожалуйста, заполните форму ниже:</span></p>
+				</div>
+				<div class="container-center container-center--user-name">
+				<div class="page-form__item page-form__item--user-name">
 					<label class="page-form__text-label" for="last-name">Фамилия:</label>
 					<input type="text" id="last-name" name="last-name" placeholder="Укажите фамилию">
 
@@ -43,67 +42,103 @@
 					<input type="text" id="middle-name" name="middle-name" placeholder="Ну и отчество тоже">
 				</div>
 			</div>
-			<div class="page-form__item">
+			<div class="page-form__item page-form__item--achive">
 				<div class="container-center">
-					<h3 class="page-form__fieldset-title">Ваши безбашенные достижения в путешествии</h3>
-					<input type="checkbox" name="selfie-shark" id="selfie-shark" checked>
-					<label for="selfie-shark" class="page-form__achive-label">Сделал селфи с акулой</label>
-					
-					<input type="checkbox" name="sunburn" id="sunburn" checked>
-					<label for="sunburn" class="page-form__achive-label">Обгорел на пляже</label>
-					
-					<input type="checkbox" name="saw-chuck" id="saw-chuck">
-					<label for="saw-chuck" class="page-form__achive-label">Видел Чака Норриса</label>
-					
-					<input type="checkbox" name="souvenirs" id="souvenirs">
-					<label for="souvenirs" class="page-form__achive-label">Накупил сувениров</label>
-					
-					<input type="checkbox" name="tower" id="tower" checked>
-					<label for="" class="page-form__achive-label">Обгорел на пляже</label>
-					
-					<input type="checkbox" name="destroy-hotel" id="destroy-hotel">
-					<label for="destroy-hotel" class="page-form__achive-label">Разгромил отель</label>
+					<fieldset class="page-form__fieldset">
+						<legend class="page-form__fieldset-title">Ваши безбашенные достижения в путешествии</legend>
+						<div class="page-form__achive-wrapper">
+							<input type="checkbox" name="selfie-shark" id="selfie-shark" checked>
+							<label for="selfie-shark" class="page-form__achive-label">Сделал селфи с акулой</label>
+							
+							<input type="checkbox" name="sunburn" id="sunburn" checked>
+							<label for="sunburn" class="page-form__achive-label">Обгорел на пляже</label>
+							
+							<input type="checkbox" name="saw-chuck" id="saw-chuck">
+							<label for="saw-chuck" class="page-form__achive-label">Видел Чака Норриса</label>
+							
+							<input type="checkbox" name="souvenirs" id="souvenirs">
+							<label for="souvenirs" class="page-form__achive-label">Накупил сувениров</label>
+							
+							<input type="checkbox" name="tower" id="tower" checked>
+							<label for="tower" class="page-form__achive-label">Удержал башню</label>
+							
+							<input type="checkbox" name="destroy-hotel" id="destroy-hotel">
+							<label for="destroy-hotel" class="page-form__achive-label">Разгромил отель</label>
+						</div>
+					</fieldset>
 				</div>
 			</div>
-			<div class="page-form__item">
+			<div class="page-form__item page-form__item--contacts">
 				<div class="container-center">
-					<label for="tel" class="page-form__text-label">Номерок телефончика</label>
-					<input type="tel" name="tel" id="tel" placeholder="Номер, пожалуйста" pattern="(\+?\d[- .]*){7,13}" required>
-
-					<label for="email" class="page-form__text-label">Адресок почты</label>
-					<input type="email" name="email" id="email" placeholder="E-mail, пожалуйста" pattern="[^@]+@[^@]+\.[a-zA-Z]{2,6}" required>
+					<fieldset class="page-form__fieldset">
+						<legend class="page-form__fieldset-title">Контактная информация</legend>
+                            <!--mobile-->
+						<label for="tel" class="page-form__text-label page-form__text-label--mobile">Номерок телефончика</label>
+						<input class="page-form__input-mobile" type="tel" name="tel" id="tel" placeholder="Номер, пожалуйста" pattern="(\+?\d[- .]*){7,13}">
+                        
+                        <label for="email" class="page-form__text-label page-form__text-label--mobile">Адресок почты</label>
+						<input class="page-form__input-mobile" type="email" name="email" id="email" placeholder="E-mail, пожалуйста" pattern="[^@]+@[^@]+\.[a-zA-Z]{2,6}">
+                            <!-- tablet	-->
+                        <label for="tel-tablet" class="page-form__text-label page-form__text-label--tablet">
+						<input class="page-form__input-tablet" type="tel" name="tel" id="tel-tablet" placeholder="+7 ХХХ ХХХ-ХХ-ХХ" pattern="(\+?\d[- .]*){7,13}">
+						Номер телефона</label>
+						
+						<label for="email-tablet" class="page-form__text-label page-form__text-label--tablet"> 
+						<input class="page-form__input-tablet" type="email" name="email" id="email-tablet" placeholder="Введите почту" pattern="[^@]+@[^@]+\.[a-zA-Z]{2,6}">
+						Адрес почты</label>
+						
+					</fieldset>
 				</div>
 			</div>
-			<div class="page-form__item">
+			<div class="page-form__item page-form__item--apps">
 				<div class="container-center">
-					<h3 class="page-form__fieldset-title">С каким приложением путешествовали?</h3>
-					<input type="radio" name="ios" id="ios" checked>
-					<label for="ios" class="page-form__apps-label">Pink для iOS</label>
-
-					<input type="radio" name="android" id="android">
-					<label for="android" class="page-form__apps-label">Pink на Android</label>
-
-					<input type="radio" name="windows" id="windows">
-					<label for="windows" class="page-form__apps-label">Windows Phone</label>
+					<fieldset class="page-form__fieldset">
+						<legend class="page-form__fieldset-title">С каким приложением путешествовали?</legend>
+						<input type="radio" name="app" id="ios" checked>
+						<label for="ios" class="page-form__apps-label">Pink для iOS</label>
+						
+						<input type="radio" name="app" id="android">
+						<label for="android" class="page-form__apps-label">Pink на Android</label>
+						
+						<input type="radio" name="app" id="windows">
+						<label for="windows" class="page-form__apps-label">Windows Phone</label>
+					</fieldset>
 				</div>
 			</div>
-			<div class="page-form__item">
+			<div class="page-form__item page-form__item--message ">
 				<div class="container-center">
-					<label for="message" class="page-form__text-label">Опишите свои эмоции</label>
-					<textarea name="message" id="message" cols="30" rows="10" placeholder="Можно прям в красках, не стесняясь в выражениях"></textarea>
+					<fieldset class="page-form__fieldset">
+						<legend class="page-form__fieldset-title"><label for="message">Опишите свои эмоции</label></legend>
+						<textarea name="message" id="message" placeholder="Можно прям в красках, не стесняясь в выражениях"></textarea>
+					</fieldset>
 				</div>
 			</div>
-			<div class="page-form__item">
-				<div class="container-center">
+			<div class="page-form__item page-form__item--submit-form">
+				<div class="container-center container-center--submit">
 					<input class="page-form__submit-btn" type="submit" id="submit-btn" value="Отправить форму">
-					<p class="page-form__footnote"><span>*</span>__обязательные поля</p>
+					<p class="page-form__footnote"><span>*</span>__обязательные <span>для заполнения</span> поля</p>
 				</div>
 			</div>
+			
+		<!--	pop up fail		-->
+			<div class="page-form__popup-error">
+				<h2>Что-то пошло не так!</h2>
+				<p>Проверьте поля, выделенные красным, скорее всего вы забыли их заполнить</p>
+				<button class="page-form__popup-btn page-form__popup-btn--error" type="button">ок</button>
+			</div>
+			
+	<!--	pop up sent		-->
+			<div class="page-form__popup-success">
+				<h2>Ваша заявка отправлена</h2>
+				<p>Спасибо за ваше участие, ваша заявка уже поступила к нам. В ближайшее время мы рассмотрим ее и оповестим вас.</p>
+				<button class="page-form__popup-btn page-form__popup-btn--success" type="button">закрыть окно</button>
+			</div>
+	
 		</form>
 	</main>
 	<footer class="page-footer">
 		<div class="page-footer__links-wrapper">
-			<div class="logo">
+			<div class="logo logo--footer">
 				<a class="logo__link" href="index.html">Pink</a>
 			</div>
 			<div class="social-links">
@@ -113,9 +148,11 @@
 			</div>
 			<p class="page-footer__copyright">
 				Разработано:
-				<a class="copy-link" href="https://htmlacademy.ru/">HTML Academy</a>
+				<a class="copy-link" href="https://htmlacademy.ru">HTML Academy</a>
 			</p>
 		</div>
 	</footer>
+	<script src="js/menu-toggle.js"></script>
+	<script src="js/popup.js"></script>
 </body>
 </html>

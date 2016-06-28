@@ -5,53 +5,64 @@
 	<title>Pink</title>
 	<meta name="viewport" content="width=device-width,initial-scale=1">
   	<meta name="format-detection" content="telephone=no">
-	<link href="http://fonts.googleapis.com/css?family=Open+Sans:400,700,300&amp;subset=latin,cyrillic-ext" rel="stylesheet" type="text/css">
 	<link rel="stylesheet" href="css/style.css">
 </head>
-<body>
-	<header class="page-header">
-		<div class="menu">
-			<div class="container-center">
-				<div class="logo">
-					<a class="logo__link" href="#">Pink</a>
+<body class="pink-photo">
+	<header class="page-header page-header--photo">
+		<div class="page-header__wrapper page-header__wrapper--closed page-header__wrapper--nojs">
+			<nav class="main-nav">
+				<div class="logo logo--header">
+					<a href="index.html">Pink</a>
 				</div>
-				<nav class="main-nav  main-nav--hidden">
-					<a href="#" class="main-nav__toggle"></a>
-					<ul class="main-nav__list">
-						<li class="main-nav__item"><a href="#">Главная</a></li>
-						<li class="main-nav__item"><a href="#">Фотографии</a></li>
-						<li class="main-nav__item"><a href="#">Конкурс</a></li>
-						<li class="main-nav__item"><a href="#">Hmtl Academy</a></li>
-					</ul>
-				</nav>
-			</div>
+				<a href="#" class=" main-nav__toggle"></a>
+				<ul class="main-nav__list">
+					<li class="main-nav__item"><a href="index.html">Главная</a></li>
+					<li class="main-nav__item main-nav__item--active"><a>Фотографии</a></li>
+					<li class="main-nav__item"><a href="form.html">Конкурс</a></li>
+					<li class="main-nav__item"><a href="https://htmlacademy.ru">HTML Academy</a></li>
+				</ul>
+			</nav>
 		</div>
-		<h1 class="page-header__title">Фотографии пользователей</h1>
+		<h1 class="page-header__title">Фотографии<br> пользователей</h1>
 	</header>
 	<main>
 		<div class="blog-posts">
 			<div class="container-center">
-				<p class="blog-posts__description">Взгляните на фотографии, которые выкладывают пользователи! Видите, как не хватает ваших?</p>
+				<p class="blog-posts__title">Взгляните на фотографии, которые выкладывают пользователи! Видите, как не хватает ваших?</p>
 			</div>
 
-			<article class="post">
+			<article class="post post--panorama-day">
 				<div class="post__photo">
-					<a href="#"><img src="http://placehold.it/320x92/292929/e3e3e3"></a>
+					<a href="#">
+             			<picture>
+              				<source media="(min-width: 1200px)" srcset="img/panorama-desktop@1x.jpg 1x, img/panorama-desktop@2x.jpg 2x">
+              				<source media="(min-width: 700px)" srcset="img/panorama-tablet@1x.jpg 1x, img/panorama-tablet@2x.jpg 2x">
+              				<img src="img/panorama-mobile@1x.jpg" srcset="img/panorama-mobile@2x.jpg 2x" alt="Панорама дня">
+            			</picture>
+            		</a>
 				</div>
-				<div class="container-center post__content">
-					<p class="post__bloger-name">Анна<time datetime="2016-06-06 11:00">(5 минут назад)</time></p>
-					<p class="post__comment">Прыгать или нет? Напишите в коментарии свой совет и смотрите прямую транслацию в перископе, задавайте свои вопросы!</p>
-					<p class="post__likes">Нравится: <span>215</span></p>
+				<div class="container-center">
+					<div class="post__content">
+						<p class="post__bloger-name">Анна <time datetime="2016-06-06 11:00">(5 минут назад)</time></p>
+						<p class="post__comment">Прыгать или нет? Напишите в коментарии свой совет и смотрите прямую транслацию в перископе, задавайте свои вопросы!</p>
+						<p class="post__likes">Нравится: <span>215</span></p>
+					</div>
 				</div>
 			</article>
 
-			<div class="container-center">
+			<div class="blog-posts__wrapper">
 				<article class="post">
 					<div class="post__photo">
-						<a href="#"><img src="http://placehold.it/300x92/292929/e3e3e3"></a>
+						<a href="#">
+							<picture>
+              					<source media="(min-width: 1200px)" srcset="img/photo-1-desktop@1x.jpg 1x, img/photo-1-desktop@2x.jpg 2x">
+              					<source media="(min-width: 700px)" srcset="img/photo-1-tablet@1x.jpg 1x, img/photo-1-tablet@2x.jpg 2x">
+              					<img src="img/photo-1-mobile@1x.jpg" srcset="img/photo-1-mobile@2x.jpg 2x" alt="Фото Левона">
+            				</picture>
+						</a>
 					</div>
 					<div class="post__content">
-						<p class="post__bloger-name">Левон<time datetime="2016-06-06 11:00">(5 часов назад)</time></p>
+						<p class="post__bloger-name">Левон <time datetime="2016-06-06 11:00">(5 часов назад)</time></p>
 						<p class="post__comment">Вчера он на луну летал, сегодня в руки к нам попал.</p>
 						<p class="post__likes">Нравится: <span>356</span></p>
 					</div>
@@ -59,10 +70,16 @@
 
 				<article class="post">
 					<div class="post__photo">
-						<a href="#"><img src="http://placehold.it/300x92/292929/e3e3e3"></a>
+						<a href="#">
+							<picture>
+              					<source media="(min-width: 1200px)" srcset="img/photo-2-desktop@1x.jpg 1x, img/photo-2-desktop@2x.jpg 2x">
+              					<source media="(min-width: 700px)" srcset="img/photo-2-tablet@1x.jpg 1x, img/photo-2-tablet@2x.jpg 2x">
+              					<img src="img/photo-2-mobile@1x.jpg" srcset="img/photo-2-mobile@2x.jpg 2x" alt="Фото Антона">
+            				</picture>
+						</a>
 					</div>
 					<div class="post__content">
-						<p class="post__bloger-name">Антон<time datetime="2016-06-06 11:00">(12 часов назад)</time></p>
+						<p class="post__bloger-name">Антон <time datetime="2016-06-06 11:00">(12 часов назад)</time></p>
 						<p class="post__comment">Соседи будут рады!</p>
 						<p class="post__likes">Нравится: <span>666</span></p>
 					</div>
@@ -70,10 +87,16 @@
 
 				<article class="post">
 					<div class="post__photo">
-						<a href="#"><img src="http://placehold.it/300x92/292929/e3e3e3"></a>
+						<a href="#">
+							<picture>
+              					<source media="(min-width: 1200px)" srcset="img/photo-3-desktop@1x.jpg 1x, img/photo-3-desktop@2x.jpg 2x">
+              					<source media="(min-width: 700px)" srcset="img/photo-3-tablet@1x.jpg 1x, img/photo-3-tablet@2x.jpg 2x">
+              					<img src="img/photo-3-mobile@1x.jpg" srcset="img/photo-3-mobile@2x.jpg 2x" alt="Фото Бориса">
+            				</picture>
+						</a>
 					</div>
 					<div class="post__content">
-						<p class="post__bloger-name">Борис<time datetime="2016-06-06 11:00">(20 часов назад)</time></p>
+						<p class="post__bloger-name">Борис <time datetime="2016-06-06 11:00">(20 часов назад)</time></p>
 						<p class="post__comment">Здесь могла быть ваша цитата о высоком и вечном.</p>
 						<p class="post__likes">Нравится: <span>215</span></p>
 					</div>
@@ -81,10 +104,16 @@
 
 				<article class="post">
 					<div class="post__photo">
-						<a href="#"><img src="http://placehold.it/300x92/292929/e3e3e3"></a>
+						<a href="#">
+							<picture>
+              					<source media="(min-width: 1200px)" srcset="img/photo-4-desktop@1x.jpg 1x, img/photo-4-desktop@2x.jpg 2x">
+              					<source media="(min-width: 700px)" srcset="img/photo-4-tablet@1x.jpg 1x, img/photo-4-tablet@2x.jpg 2x">
+              					<img src="img/photo-4-mobile@1x.jpg" srcset="img/photo-4-mobile@2x.jpg 2x" alt="Фото Сергея">
+            				</picture>
+						</a>
 					</div>
 					<div class="post__content">
-						<p class="post__bloger-name">Сергей<time datetime="2016-06-06 11:00">(25 часов назад)</time></p>
+						<p class="post__bloger-name">Сергей <time datetime="2016-06-06 11:00">(25 часов назад)</time></p>
 						<p class="post__comment">Самая кубанская в мире!</p>
 						<p class="post__likes">Нравится: <span>4</span></p>
 					</div>
@@ -92,10 +121,16 @@
 
 				<article class="post">
 					<div class="post__photo">
-						<a href="#"><img src="http://placehold.it/300x92/292929/e3e3e3"></a>
+						<a href="#">
+							<picture>
+              					<source media="(min-width: 1200px)" srcset="img/photo-5-desktop@1x.jpg 1x, img/photo-5-desktop@2x.jpg 2x">
+              					<source media="(min-width: 700px)" srcset="img/photo-5-tablet@1x.jpg 1x, img/photo-5-tablet@2x.jpg 2x">
+              					<img src="img/photo-5-mobile@1x.jpg" srcset="img/photo-5-mobile@2x.jpg 2x" alt="Фото Максима">
+            				</picture>
+						</a>
 					</div>
 					<div class="post__content">
-						<p class="post__bloger-name">Максим<time datetime="2016-06-06 11:00">(40 часов назад)</time></p>
+						<p class="post__bloger-name">Максим <time datetime="2016-06-06 11:00">(40 часов назад)</time></p>
 						<p class="post__comment">Где снег-то?</p>
 						<p class="post__likes">Нравится: <span>150</span></p>
 					</div>
@@ -103,36 +138,77 @@
 
 				<article class="post">
 					<div class="post__photo">
-						<a href="#"><img src="http://placehold.it/300x92/292929/e3e3e3"></a>
+						<a href="#">
+							<picture>
+              					<source media="(min-width: 1200px)" srcset="img/photo-6-desktop@1x.jpg 1x, img/photo-6-desktop@2x.jpg 2x">
+              					<source media="(min-width: 700px)" srcset="img/photo-6-tablet@1x.jpg 1x, img/photo-6-tablet@2x.jpg 2x">
+              					<img src="img/photo-6-mobile@1x.jpg" srcset="img/photo-6-mobile@2x.jpg 2x" alt="Фото Надежды">
+            				</picture>
+						</a>
 					</div>
 					<div class="post__content">
-						<p class="post__bloger-name">Надежда<time datetime="2016-06-06 11:00">(45 часов назад)</time></p>
+						<p class="post__bloger-name">Надежда <time datetime="2016-06-06 11:00">(45 часов назад)</time></p>
 						<p class="post__comment">Всем GM и взаимные лайки!</p>
 						<p class="post__likes">Нравится: <span>2560</span></p>
 					</div>
 				</article>
-				<p class="blog-posts__description">Затмите их всех!<br>Выкладывайте все, что накопилось в телефоне!</p>
+				<p class="blog-posts__title blog-posts__title--second">Затмите их всех!<br>Выкладывайте все, что накопилось в телефоне!</p>
 			</div>
 			
 			<form class="blog-posts__form" action="#" method="post">
 				<div class="container-center">
 					<div class="blog-posts__img">
-						<img src="http://placehold.it/280x384/292929/e3e3e3" width="280" height="384" alt="">
+					<a href="#">
+						<picture>
+              				<source media="(min-width: 1200px)" srcset="img/photo-7-desktop@1x.jpg 1x, img/photo-7-desktop@2x.jpg 2x">
+              				<source media="(min-width: 700px)" srcset="img/photo-7-tablet@1x.jpg 1x, img/photo-7-tablet@2x.jpg 2x">
+              				<img src="img/photo-7-mobile@1x.jpg" srcset="img/photo-7-mobile@2x.jpg 2x" alt="Фото зимняя дорога">
+            			</picture>
+            			</a>
 					</div>
-					<div class="blog-posts__tools">
-						<span class="blog-posts__tool  blog-posts__tool--crop"></span>
-						<span class="blog-posts__tool  blog-posts__tool--fill"></span>
-						<span class="blog-posts__tool  blog-posts__tool--contrast"></span>
-					</div>
-					<div class="blog-posts__range">
-    					<div class="blog-posts__scale"></div>
-    					<div class="blog-posts__toggle"></div>
-    				</div>
-				</div>
-				<div class="blog-posts__form-btns">
-					<div class="container-center">
-						<input class="blog-posts__form-btn" type="submit" id="send-btn" value="Запостить">
-						<input class="blog-posts__form-btn" type="reset" id="reset-btn" value="Отмена">
+					<div class="blog-posts__tools-wrapper">
+						<div class="blog-posts__tools">
+							<input type="radio" name="toggle-tool" id="tool-1" checked>
+							<input type="radio" name="toggle-tool" id="tool-2">
+							<input type="radio" name="toggle-tool" id="tool-3">
+							
+							<label for="tool-1">
+								<svg id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 							width="48px" height="48px" viewBox="0 0 48 48" enable-background="new 0 0 48 48" xml:space="preserve">
+									<path fill="none" d="M0,0h48v48H0V0z"/>
+									<path class="icon-tool icon-crop" fill="#b5b9be" d="M34,30h4V14c0-2.21-1.79-4-4-4H18v4h16V30z M14,34V2h-4v8H2v4h8v20c0,2.21,1.79,4,4,4h20v8h4v-8h8v-4H14z"/>
+								</svg>
+							</label>
+							
+							<label for="tool-2">
+								<svg id="Layer_2" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 							width="48px" height="48px" viewBox="0 0 48 48" enable-background="new 0 0 48 48" xml:space="preserve">
+									<path fill="none" d="M0,0h48v48H0V0z"/>
+									<path class="icon-tool icon-fill" fill="#b5b9be" d="M33.12,17.88L15.24,0l-2.83,2.83l4.76,4.76L6.88,17.88c-1.17,1.17-1.17,3.07,0,4.24l11,11C18.46,33.71,19.23,34,20,34
+									s1.54-0.29,2.12-0.88l11-11C34.29,20.95,34.29,19.05,33.12,17.88z M10.41,20L20,10.42L29.59,20H10.41z M38,23c0,0-4,4.33-4,7
+									c0,2.21,1.79,4,4,4s4-1.79,4-4C42,27.33,38,23,38,23z"/>
+									<rect class="icon-tool icon-fill" y="40" width="48" height="3" fill="#b5b9be"/>
+								</svg>
+							</label>
+							
+							<label for="tool-3">
+								<svg id="Layer_3" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+								width="31.92px" height="31.92px" viewBox="-35.422 -7.96 31.92 31.92" enable-background="new -35.422 -7.96 31.92 31.92"
+	 							xml:space="preserve">
+									<path class="icon-tool icon-contrast" fill="#b5b9be" d="M-19.462-3.96c6.595,0,11.96,5.365,11.96,11.96s-5.365,11.96-11.96,11.96S-31.422,14.595-31.422,8
+									S-26.057-3.96-19.462-3.96 M-19.462-7.96c-8.814,0-15.96,7.145-15.96,15.96c0,8.813,7.146,15.96,15.96,15.96S-3.502,16.813-3.502,8
+									C-3.502-0.815-10.648-7.96-19.462-7.96L-19.462-7.96z"/>
+									<path class="icon-tool icon-contrast" fill="#b5b9be" d="M-19.462,16.331c4.706,0,8.52-3.813,8.52-8.52c0-4.705-3.813-8.519-8.52-8.519"/>
+								</svg>
+							</label>
+							<div class="blog-posts__range"></div>
+							<div class="blog-posts__range"></div>
+							<div class="blog-posts__range"></div>
+						</div>
+						<div class="blog-posts__form-btns">
+							<input class="blog-posts__form-btn" type="submit" id="send-btn" value="Запостить">
+							<input class="blog-posts__form-btn blog-posts__form-btn--reset" type="reset" id="reset-btn" value="Отмена">
+						</div>
 					</div>
 				</div>
 			</form>
@@ -140,7 +216,7 @@
 	</main>
 	<footer class="page-footer">
 		<div class="page-footer__links-wrapper">
-			<div class="logo">
+			<div class="logo logo--footer">
 				<a class="logo__link" href="index.html">Pink</a>
 			</div>
 			<div class="social-links">
@@ -149,11 +225,11 @@
 				<a class="social-link social-link--yt" href="#">Youtube</a>
 			</div>
 			<p class="page-footer__copyright">
-				Разработано:
-				<a class="copy-link" href="https://htmlacademy.ru/">HTML Academy</a>
+				Разработано
+				<a class="copy-link" href="https://htmlacademy.ru">HTML Academy</a>
 			</p>
 		</div>
 	</footer>
-	
+	<script src="js/menu-toggle.js"></script>
 </body>
 </html>
