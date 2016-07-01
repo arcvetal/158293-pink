@@ -22,15 +22,15 @@
 	    width: 100px;
 	    margin-left: -50px;
 	    text-align:center;
-	    z-index: 1000;
+		z-index: 1000;
 	}
 	
 	.prices__toggle {
 		display: inline-block;
-		vertical-align: middle;
 		width: 6px;
 		height: 6px;
 		margin-right: 12px;
+		vertical-align: middle;
 		background-color: #bec2c7;
 		background-clip: content-box;
 		border: 3px solid transparent;
@@ -73,10 +73,9 @@
 	width: calc(300% - 120px);
 	margin-left: 20px;
 	margin-right: 20px;
-	font-family: "OpenSans", "Arial", sans-serif;
 	text-transform: uppercase;
-	border-collapse: collapse;
 	background-color: #fff;
+	border-collapse: collapse;
 }
 
 .prices__table th {
@@ -85,8 +84,8 @@
 	line-height: 30px;
 	font-weight: 700;
 	color: #fff;
+	background-color: #283645;
 	border-left: 2px solid #f2f2f2;
-	background: #283645;
 }
 
 .prices__hit {
@@ -121,8 +120,8 @@
 	padding-right: 25px;
 	font-size: 14px;
 	line-height: 30px;
-	color: #283645;
 	text-align: left;
+	color: #283645;
 	border: 2px solid #e5e5e5;
 }
 
@@ -150,9 +149,9 @@
 
 @media (min-width: 700px) {
 	.prices__wrapper {
-		@include container;
 		padding-top: 35px;
 		padding-bottom: 70px;
+		@include container;
 	}
 	
 	.prices__table {
@@ -177,9 +176,9 @@
 	
 	@media (max-width: 1200px) {
 		.prices__table th {
-			font-size: 16px;
 			padding-left: 22px;
 			padding-right: 22px;
+			font-size: 16px;
 		}
 	}
 	

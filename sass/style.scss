@@ -1,5 +1,6 @@
 @import "variables";
 @import "mixins";
+@import "global/fonts";
 @import "blocks/page-header";
 @import "blocks/main-nav";
 @import "blocks/download";
@@ -16,4 +17,3 @@
 @import "blocks/logo";
 @import "blocks/blog-posts";
 @import "global/scaffolding";
-@import "global/fonts";

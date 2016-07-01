@@ -5,15 +5,15 @@
 
 .social-link {
 	display: inline-block;
-    vertical-align: top;
     width: 45px;
     height: 45px;
 	margin-right: 7px;
     font-size: 0;
-    border: 3px solid #e9ebec;
-    border-radius: 50%;
+	vertical-align: top;
 	background-repeat: no-repeat;
 	background-position: center;
+	border: 3px solid #e9ebec;
+    border-radius: 50%;
 	
 	&:hover {
 		border-color: #283645;

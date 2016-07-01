@@ -1,6 +1,7 @@
 .blog-posts {
 	font-size: 0;
 }
+
 .blog-posts__wrapper {
 	display: flex;
 	flex-wrap: wrap;
@@ -20,13 +21,22 @@
 	padding-bottom: 43px;
 }
 
+.blog-posts__form img {
+	width: auto;
+	height: auto;
+}
+
+.blog-posts__img {
+	line-height: 0;
+}
+
 .blog-posts__tools label {
 	display: inline-block;
-	margin-right: 35px;
 	width: 48px;
 	height: 48px;
-	vertical-align: top;
+	margin-right: 35px;
 	text-align: center;
+	vertical-align: top;
 	background-repeat: no-repeat;
 	background-position: center;
 	background-size: cover;
@@ -59,8 +69,8 @@
 		left: 50%;
 		width: 10px;
 		height: 10px;
-		border: 2px solid #d22856;
 		background-color: #f2f2f2;
+		border: 2px solid #d22856;
 		border-radius: 50%;
 	}
 	
@@ -132,12 +142,12 @@
     font-size: 18px;
 	line-height: 18px;
 	font-weight: 700;
-	font-family: "OpenSans", "Arial", sans-serif;
+	font-family: "Open Sans", "Arial", sans-serif;
+	text-decoration: none;
     color: #d22856;
 	background-color: #f2f2f2;
     border: 3px solid #d22856;
     border-radius: 50px;
-	text-decoration: none;
 	outline: none;
 	
 	&:hover {
@@ -157,8 +167,8 @@
 	
 	&:hover {
 		color: #b5b9be;
-		border-color: #b5b9be;
 		background-color: transparent;
+		border-color: #b5b9be;
 	}
 	
 	&:active {

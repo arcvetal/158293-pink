@@ -4,7 +4,6 @@
 	
 .download__download-btn {
 	display: inline-block;
-	vertical-align: top;
 	width: 100%;
 	max-width: 300px;
 	margin-top: 30px;
@@ -12,20 +11,21 @@
 	font-size: 18px;
 	line-height: 22px;
 	font-weight: 700;
-	color: #fff;
-	box-sizing: border-box;
 	text-align: center;
+	vertical-align: top;
+	color: #fff;
 	border: 3px solid #fff;
 	border-radius: 37px;
+	box-sizing: border-box;
 
 	&:hover {
-		background-color: #fff;
 		color: #d12755;
+		background-color: #fff;
 	}
 	
 	&:active {
-		background-color: #fff;
 		color: rgba(209,39,85,.3);
+		background-color: #fff;
 	}
 }
 .download__list {
@@ -82,11 +82,11 @@
 
 @media (min-width: 1200px) {
 	.download__download-btn {
+		margin-top: 54px;
+		margin-bottom: 40px;
 		padding: 14px 0;
 		font-size: 21px;
 		line-height: 18px;
-		margin-top: 54px;
-		margin-bottom: 40px;
 	}
 	
 	.download__item:first-child {
