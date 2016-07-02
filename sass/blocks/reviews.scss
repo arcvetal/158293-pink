@@ -14,13 +14,17 @@
 .reviews__item {
 	padding-top: 45px;
 	padding-bottom: 120px;
-	font: 400 14px/30px OpenSans, Arial, sans-serif;
+	font-size: 14px;
+	line-height: 30px;
+	font-weight: 400;
 	text-align: center;	
 }
 
 .reviews__item-title {
 	margin-bottom: 10px;
-	font: 700 18px/30px OpenSans, Arial, sans-serif;
+	font-size: 18px;
+	line-height: 30px;
+	font-weight: 700;
 	color: #000;
 }
 
@@ -40,10 +44,10 @@
 
 .reviews__toggle {
 	display: inline-block;
-	vertical-align: middle;
 	width: 6px;
 	height: 6px;
 	margin-right: 12px;
+	vertical-align: middle;
 	background-color: #bec2c7;
 	background-clip: content-box;
 	border: 3px solid transparent;
@@ -91,6 +95,7 @@
 	.reviews .container-center {
 		position: relative;
 	}
+	
 	.reviews__list {
 		position: relative;
 		background-image: url("../img/icon-quotes.svg");

@@ -7,8 +7,8 @@
 		display: block;
 		font-size: 14px;
 		line-height: 24px;
-		text-align: left;
 		font-weight: 400;
+		text-align: left;
 		background-color: #fff;
 	}
 	
@@ -30,17 +30,16 @@
     		left: 18px;
     		width: 203px;
     		height: 203px;
-    		text-align: center;
     		font-size: 95px;
 			line-height: 175px;
-			font-family: "OpenSans", "Arial", sans-serif;
+			font-family: "Open Sans", "Arial", sans-serif;
 			font-weight: 700;
+			text-align: center;
     		color: #d12755;
     		background-color: #fff;
     		border: 13px solid #d12755;
-			box-sizing: border-box;
     		border-radius: 50%;
-			
+			box-sizing: border-box;
 		}
 	}
 		
@@ -62,9 +61,9 @@
 		font-size: 14px;
 		line-height: 24px;
 		font-weight: 400;
-		font-family: "OpenSans", "Arial", sans-serif;
-		color: #d22856;
+		font-family: "Open Sans", "Arial", sans-serif;
 		text-decoration: underline;
+		color: #d22856;
 		
 		&:hover {
 			    color: #283645;	
@@ -100,11 +99,11 @@
 		
 	.research__content {
 		margin-top: 10px;
-		padding-right: 40px;
+		padding-right: 45px;
 		font-size: 18px;
 		line-height: 30px;
 		font-weight: 400;
-		font-family: "OpenSans", "Arial", sans-serif;
+		font-family: "Open Sans", "Arial", sans-serif;
 	}
 	
 	.research__link {

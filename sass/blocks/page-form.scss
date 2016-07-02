@@ -17,7 +17,6 @@
 }
 
 .page-form {
-	font-family: "OpenSans", "Arial", sans-serif;
 	background-color: #fff;
 	
 	input[type="text"],
@@ -31,8 +30,8 @@
 		line-height: 30px;
 		color: #283645;
     	border: 2px solid #e5e5e5;
-		box-sizing: border-box;
     	border-radius: 3px;
+		box-sizing: border-box;
     	outline: 0;
 		
 		&::placeholder {
@@ -76,8 +75,8 @@
 .page-form__fieldset {
 	display: flex;
 	flex-wrap: wrap;
-	padding: 0;
 	margin: 0;
+	padding: 0;
 	border: none;
 }
 
@@ -111,6 +110,7 @@ input[type="radio"] {
 	&:hover:before {
 		border-color: #283645;
 	}
+	
 	&:active:before {
 		border-color: #d22856;
 	}
@@ -123,10 +123,9 @@ input[type="radio"] {
 	left: 0px;
 	width: 36px;
 	height: 36px;
-	border: 2px solid #e5e5e5;
 	background-color: #fff;
+	border: 2px solid #e5e5e5;
 	border-radius: 2px;
-	
 }
 
 input[type="checkbox"]:checked + .page-form__achive-label:after {
@@ -200,7 +199,7 @@ input[type="checkbox"]:checked + .page-form__achive-label:after {
 	min-height: 200px;
 	font-size: 18px;
 	line-height: 30px;
-	font-family: "OpenSans", "Arial", sans-serif;	
+	font-family: "Open Sans", "Arial", sans-serif;	
 }
 
 .container-center--submit {
@@ -217,12 +216,12 @@ input[type="checkbox"]:checked + .page-form__achive-label:after {
     font-size: 18px;
 	line-height: 30px;
 	font-weight: 700;
+	font-family: "Open Sans", "Arial", sans-serif;	
 	text-transform: uppercase;
     color: #fff;
-	letter-spacing: 1px;
     background-color: #2aab6d;
-    border-radius: 3px;
 	border: none;
+    border-radius: 3px;
 	outline: none;
 	
 	&:hover {
@@ -234,8 +233,8 @@ input[type="checkbox"]:checked + .page-form__achive-label:after {
 	}
 	
 	&:disabled {
-		background-color: #e5e5e5;
 		color: #fff;
+		background-color: #e5e5e5;	
 	}
 }
 
@@ -246,6 +245,7 @@ input[type="checkbox"]:checked + .page-form__achive-label:after {
 	& span:first-child {
 		color: #d12755;
 	}
+	
 	& span:last-child {
 		display: none;
 	}
@@ -267,6 +267,7 @@ input[type="checkbox"]:checked + .page-form__achive-label:after {
 	box-shadow: 0 7px 15px 0 rgba(0, 1, 1, .15);
 	z-index: 1001;
 }
+
 .page-form__popup-block {
 	display: block;
 }
@@ -303,12 +304,12 @@ input[type="checkbox"]:checked + .page-form__achive-label:after {
     font-size: 18px;
 	line-height: 30px;
 	font-weight: 700;
+	font-family: "Open Sans", "Arial", sans-serif;	
 	text-transform: uppercase;
     color: #fff;
-	letter-spacing: 1px;
     background-color: #2aab6d;
-    border-radius: 3px;
 	border: none;
+    border-radius: 3px;
 	outline: none;
 	
 	&:hover {
@@ -357,7 +358,6 @@ input[type="checkbox"]:checked + .page-form__achive-label:after {
 		padding-bottom: 15px;
 	}
 	
-	
 	.page-form__item--contacts {
 		padding-top: 55px;
 	}
@@ -369,7 +369,6 @@ input[type="checkbox"]:checked + .page-form__achive-label:after {
 	.page-form__item--contacts label {
 		padding-bottom: 20px;
 	}
-	
 	
 	.page-form__item--achive {
 		padding-top: 55px;
@@ -397,15 +396,11 @@ input[type="checkbox"]:checked + .page-form__achive-label:after {
 		margin-top: 60px;
 	}
 	
-	
-	
 	@media (max-width: 1200px) {
 		.page-form__item {
 			@include container;
 		}
 	}
-	
-	
 	
 	.page-form__item--user-name   {
 		align-items: baseline; 
@@ -480,11 +475,11 @@ input[type="checkbox"]:checked + .page-form__achive-label:after {
 			width: 62px;
 			height: 64px;
 			background-color: #e5e5e5;
-			border-radius: 0 3px 3px 0;
 			background-image: url("../img/icon-mail.svg");
 			background-repeat: no-repeat;
 			background-position: center;
 			background-size: 18px 13px;
+			border-radius: 0 3px 3px 0;
 		}
 	}
 	
@@ -511,9 +506,9 @@ input[type="checkbox"]:checked + .page-form__achive-label:after {
 	
 	.page-form__footnote {
 		width: 32.26%;
-		text-align: right;
 		padding: 0;
 		margin-right: 0;
+		text-align: right;
 	}
 	
 	.page-form__popup-error,
@@ -627,9 +622,9 @@ input[type="checkbox"]:checked + .page-form__achive-label:after {
 	
 	.page-form__achive-label {
 		display: inline-block;
-		vertical-align: top;
 		margin-top: 10px;
 		padding-left: 60px;
+		vertical-align: top;
 	}
 	
 	label[for="selfie-shark"] {

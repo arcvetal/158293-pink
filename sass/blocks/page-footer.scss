@@ -3,9 +3,9 @@
 	font-size: 14px;
 	line-height: 18px;
 	font-weight: 400;
-	font-family: "OpenSans", "Arial", sans-serif;
+	font-family: "Open Sans", "Arial", sans-serif;
 	color: #283645;
-	background: #fff;
+	background-color: #fff;
 }
 .pink-photo .page-footer {
 	padding-top: 10px;
@@ -14,11 +14,11 @@
 	position: relative;
 	width: 100%;
 	height: 200px;
+	background-color: #e8e6dc;
 	background-image: url("../img/bg-map-mobile@1x.png");
 	background-repeat: no-repeat;
 	background-position: center -200px;
 	background-size: auto;
-	background-color: #e8e6dc;
 	
 	&:after {
 		position: absolute;
@@ -49,6 +49,7 @@
 	margin-bottom: 5px;
 	padding-right: 26px;
 }
+
 .page-footer__copyright a {
 	position: relative;
 	margin-left: 5px;
@@ -79,22 +80,24 @@
 
 .page-footer__links-wrapper--none {
 	display: none;
-	
 }
 
 @media (min-width: 700px) {
 	.pink-photo .page-footer {
 		padding-top: 0;
 	}
+	
 	.page-footer__map {
 		height: 380px;
 		background-image: url("../img/bg-map-tablet@1x.jpg");
 		background-position: center -100px;
 	}
+	
 	.page-footer__links-wrapper {
 		display: flex;
 		justify-content: space-between;
 	}
+	
 	.page-footer__copyright {
 		margin-top: 55px;
 	}
@@ -106,19 +109,24 @@
 		background-position: center -50px;
 		background-size: cover;
 	}
+	
 	.page-footer__links-wrapper {
 		padding: 30px 0;
 	}
+	
 	.page-footer__copyright {
 		margin-top: 40px;
 		font-size: 18px;
 	}
+	
 	.pink-form  .page-footer__links-wrapper {
 		padding-top: 0;
 	}
+	
 	.pink-photo .page-footer__links-wrapper {
 		padding-top: 5px;
 	}
+	
 	.page-footer__copyright {
 		margin-top: 55px;
 	}

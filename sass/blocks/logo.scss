@@ -13,6 +13,10 @@
 	padding: 17px 0;
 }
 
+.page-header__wrapper--nojs .logo--header {
+	margin-left: 20px;
+}
+
 .logo--header a {
 	&:after {
 		position: absolute;
@@ -80,6 +84,13 @@
 		width: 150px;
 		margin-bottom: 10px;
 		padding: 0;
+	}
+	
+	@media (max-width: 1200px) {
+		.page-header__wrapper--nojs .logo--header {
+			margin-left: 40px;
+			margin-bottom: 40px;
+		}
 	}
 	
 	.logo--header a {

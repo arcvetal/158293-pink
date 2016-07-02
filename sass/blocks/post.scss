@@ -16,7 +16,7 @@
 		font-size: 12px;
 		line-height: 36px;
 		font-weight: 700;
-		font-family: "OpenSans", "Arial", sans-serif;
+		font-family: "Open Sans", "Arial", sans-serif;
 		text-align: center;
 		text-transform: uppercase;
 		color: #fff;
@@ -24,12 +24,16 @@
 	}
 }
 
+.post img {
+	width: auto;
+	height: auto;
+}
+
 .post--panorama-day img {
 	width: 100%;
 }
 
-.post__photo,
-.blog-posts__img {
+.post__photo {
 	line-height: 0;
 }
 
@@ -60,8 +64,8 @@
 	padding-left: 30px;
 	font-size: 12px;
 	line-height: 24px;
-	color:#d22856;
 	text-transform: uppercase;
+	color:#d22856;
 	
 	&:before {
 		content: url("../img/icon-heart.svg");
@@ -85,6 +89,7 @@
 	.post__likes {
 		margin-top: auto;
 		padding: 0;
+		
 		&:before {
 			content: url("../img/icon-heart.svg");
 			position: absolute;
@@ -105,11 +110,11 @@
 	}
 	
 	.post--panorama-day .post__content {
-		margin-bottom: 33px;
 		flex-direction: row;
 		flex-wrap:wrap;
 		justify-content: space-between;
 		align-items: baseline;
+		margin-bottom: 33px;
 	}
 	
 	.post--panorama-day .post__bloger-name {
