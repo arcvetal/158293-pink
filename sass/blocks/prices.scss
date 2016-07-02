@@ -161,15 +161,14 @@
 	
 	.prices__table td {
 		padding: 7px;
-		padding-left: 15px;
-		padding-right: 45px;
 	}
 	
-	.prices__col-tablet {
+	td.prices__col-tablet {
 		width: 115px;
-		padding-right: 0;
+		padding-left: 15px;
+		padding-right: 45px;
 		font-size: 14px;
-		text-align: center;
+		text-align: left;
 		text-transform: none;
 	}
 	
@@ -186,10 +185,6 @@
 	th.prices__col-tablet {
 		background-color: #f2f2f2;
 		border: none;
-	}
-	
-	.prices__table td {
-		padding-right: 0px;
 	}
 	
 	.prices__cell {
@@ -212,12 +207,11 @@
 	
 	.prices__table td {
 		padding: 12px;
-		padding-right: 15px;
-		padding-left: 23px;
 		font-size: 18px;	
 	}
 	
-	.prices__col-tablet {
+	td.prices__col-tablet {
 		width: 215px;
+		padding-left: 23px;
 	}
 }
