@@ -25,9 +25,8 @@
 	textarea {
 		width: 100%;
     	margin-bottom: 16px;
-    	padding: 17px 20px 13px;
+    	padding: 17px 20px;
     	font-size: 18px;
-		line-height: 30px;
 		color: #283645;
     	border: 2px solid #e5e5e5;
     	border-radius: 3px;
@@ -152,6 +151,7 @@ input[type="checkbox"]:checked + .page-form__achive-label:after {
 
 .page-form__item--apps label {
 	position: relative;
+	width: 100%;
 	margin-bottom: 45px;
 	padding-left: 70px;
 	font-size: 18px;
@@ -343,10 +343,33 @@ input[type="checkbox"]:checked + .page-form__achive-label:after {
 		padding: 0;
 	}
 	
+	.page-form__fieldset {
+		position: relative;
+	}
+	
+	.page-form__fieldset-title {
+		position: absolute;
+		top: -10px;
+		left: 50%;
+		background-color: white;
+	}
+	
+	.page-form__item--apps .page-form__fieldset-title {
+		margin-left: -180px;
+	}
+	
+	.page-form__item--contacts .page-form__fieldset-title {
+		margin-left: -120px;
+	}
+	
 	.page-form__fieldset-title,
 	.page-form__item--apps .page-form__fieldset-title {
 		padding-top: 0px;
 		padding-bottom: 0;
+	}
+	
+	.page-form__item--achive .page-form__fieldset-title {
+		margin-left: -206px;
 	}
 	
 	.page-form__item--apps {
@@ -388,6 +411,7 @@ input[type="checkbox"]:checked + .page-form__achive-label:after {
 	}
 	
 	.page-form__item--message .page-form__fieldset-title {
+		margin-left: -112px;
 		padding-top: 0;
 		padding-bottom: 0;
 	}
@@ -462,6 +486,7 @@ input[type="checkbox"]:checked + .page-form__achive-label:after {
 	
 	.page-form__text-label--tablet{
 		position: relative;
+		width: 100%;
 		padding: 0;
 		padding-top: 0;
 		padding-bottom: 30px;
@@ -473,7 +498,7 @@ input[type="checkbox"]:checked + .page-form__achive-label:after {
 			top: 0px;
 			right: -40px;
 			width: 62px;
-			height: 64px;
+			height: 59px;
 			background-color: #e5e5e5;
 			background-image: url("../img/icon-mail.svg");
 			background-repeat: no-repeat;
@@ -506,8 +531,8 @@ input[type="checkbox"]:checked + .page-form__achive-label:after {
 	
 	.page-form__footnote {
 		width: 32.26%;
-		padding: 0;
 		margin-right: 0;
+		padding: 0;
 		text-align: right;
 	}
 	
@@ -567,7 +592,7 @@ input[type="checkbox"]:checked + .page-form__achive-label:after {
 	}
 	
 	.page-form__item--user-name input  {
-		flex-basis: 320px;
+		flex-basis: 295px;
 	}
 	
 	.page-form__item--apps  {
@@ -608,6 +633,7 @@ input[type="checkbox"]:checked + .page-form__achive-label:after {
 	.page-form__item--achive {
 		padding-top: 40px;
 	}
+	
 	.page-form__item--achive .page-form__fieldset {
 		padding-top: 40px;
 		padding-bottom: 0px;
@@ -616,7 +642,7 @@ input[type="checkbox"]:checked + .page-form__achive-label:after {
 	
 	.page-form__achive-wrapper {
 		column-count: 3;
-		column-width: 200px;
+		column-width: 255px;
 		column-gap: 55px;
 	}
 	
