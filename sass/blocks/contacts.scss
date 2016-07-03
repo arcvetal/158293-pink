@@ -30,7 +30,7 @@
 	
 .contacts__info,
 .contacts__info {
-		color: #d22856;
+	color: #d22856;
 }
 
 .contacts__info a {
@@ -44,7 +44,6 @@
 		color: #bec2c7;
 	}
 }
-
 
 @media (min-width: 700px) {
 	.contacts {
@@ -84,6 +83,7 @@
 		padding: 0 20px;
 	}
 }
+
 @media (min-width: 1200px) {
 	.container-center--flex {
 		align-items: baseline;
@@ -123,5 +123,4 @@
 	.contacts__action {
 		margin-bottom: 25px;
 	}
-	
 }
