@@ -87,10 +87,9 @@
 	.page-header__wrapper {
 		padding: 25px 0;
 	}
+	
 	@media (min-width: 1200px) {
-		.page-header--nojs .page-header__wrapper {
-			padding: 0;	
-		}
+		
 	}
 	
 	.page-header__title {
@@ -129,6 +128,10 @@
 		background-size: 
 			0, 
 			cover;
+	}
+	
+	.page-header--nojs .page-header__wrapper {	
+		background-color: rgba(0, 0, 0, .3);
 	}
 	
 	.page-header__title {
